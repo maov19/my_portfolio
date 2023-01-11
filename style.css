@@ -1,0 +1,28 @@
+.logo {
+    width: 76px;
+    height: 20px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #6070ff;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.icon {
+    float: right;
+}
+
+
+
