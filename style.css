@@ -29,6 +29,11 @@
     left: 4px;
 }
 
+.header {
+  margin: 0 24px 0 24px;
+
+}
+
 .intro {
 width: 300px;
 height: 150px;
