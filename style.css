@@ -1,3 +1,10 @@
+.navbar {
+    margin: 0 24px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
     width: 76px;
     height: 20px;
@@ -16,10 +23,14 @@
 }
 
 .icon {
+    color: #6070ff;
+    width: 16px;
+    top: 17px;
+    left: 4px;
 }
 
 .intro {
-width: 327px;
+width: 300px;
 height: 150px;
 font-family: 'Poppins';
 font-style: normal;
