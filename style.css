@@ -4,10 +4,11 @@ body {
 }
 
 .navbar {
-    margin: 0 24px 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 300px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -18,6 +19,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    
     display: flex;
     align-items: center;
     text-align: center;
@@ -28,6 +30,7 @@ body {
 }
 
 .icon {
+    display: flex;
     color: #6070ff;
     width: 16px;
     top: 17px;
@@ -84,10 +87,22 @@ flex-grow: 0;
 
 .social {
 display: flex;
-align-items: flex-start;
-gap: 12px;
+flex-direction: column;
+width: 117px;
+height: 24px;
+flex: none;
+order: 2;
+flex-grow: 0;
+}
+
+.social_links {
+display: flex;
 list-style: none;
 padding-left: 0;
+align-items: flex-start;
+gap: 16px;
+
 }
+
 
 
