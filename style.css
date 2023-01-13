@@ -28,6 +28,10 @@ body {
   flex-grow: 0;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .icon {
   display: flex;
   color: #6070ff;
@@ -37,7 +41,7 @@ body {
 }
 
 .header {
-  margin: 114px 24px 0 24px;
+  margin: 100px 24px 0 24px;
 }
 
 .intro {
@@ -57,6 +61,8 @@ body {
 }
 
 .presentation {
+  margin-top: -20px;
+  display: flex;
   width: 327px;
   height: 146px;
   font-family: 'Poppins', sans-serif;
@@ -71,7 +77,6 @@ body {
 }
 
 .connect {
-  height: 24px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -84,6 +89,7 @@ body {
 }
 
 .social {
+  margin-top: -20px;
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -94,6 +100,7 @@ body {
 }
 
 .social_links {
+  margin-top: -10px;
   display: flex;
   list-style: none;
   padding-left: 0;
