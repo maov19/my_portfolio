@@ -121,14 +121,14 @@ a:link {
   padding: 16px;
   gap: 12px;
   width: 327px;
-  height: 552px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  height: auto;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   order: 0;
   flex-grow: 0;
-
+  margin-bottom: 88px;
 }
 
 .project_image {
@@ -142,7 +142,7 @@ a:link {
 
 .project_title {
   margin: 0 0 -4px;
-  width: 295px;
+  width: 100px;
   height: 36px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -150,8 +150,6 @@ a:link {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  border: #000 solid;
-
 }
 
 .counter {
@@ -171,8 +169,6 @@ a:link {
   font-size: 9px;
   line-height: 16px;
   color: #344563;
-  border: #000 solid;
-
 }
 
 .grey_words {
@@ -180,10 +176,7 @@ a:link {
 }
 
 .project_description {
-  margin: 8px 0 0 0;
-  border: #000 solid;
-
-
+  margin: 8px 0 -20px 0;
 }
 
 .project > p {
@@ -200,10 +193,7 @@ a:link {
 
 .project_lang {
   display: flex;
-  border: #000 solid;
   padding-left: 0;
-  margin-top: -8px;
-
 }
 
 .lang_type {
@@ -230,6 +220,19 @@ a:link {
 
 ul {
   list-style-type: none;
+}
+
+.multipost {
+  display: flex;
+  height: 88px;
+  margin: 0 0 -12px;
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
 }
 
 .about {
@@ -331,13 +334,13 @@ hr {
   padding: 12px;
   background: #fff;
   border: 1px solid #396df2;
-  border-radius: 16px;
+  border-radius: 8px;
   flex: none;
   order: 0;
   flex-grow: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 1000;
+  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
@@ -386,7 +389,7 @@ hr {
   letter-spacing: 0.03em;
   grid-row-start: 6;
   grid-column: 1/2;
-  margin: -8px 0 144px 0;
+  margin: -8px 0 25px 0;
 }
 
 .white_button:hover {
