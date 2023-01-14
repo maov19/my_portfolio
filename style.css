@@ -172,7 +172,7 @@ a:link {
 }
 
 .grey_words {
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .project_description {
@@ -278,12 +278,13 @@ ul {
   margin-top: -0.1px;
 }
 
-hr { 
-  border: 0; 
-  clear:both; 
-  display:block; width: 96%; 
-  background-color:#DFE1E6; 
-  height: 1px; 
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: #dfe1e6;
+  height: 1px;
 }
 
 .arrow_down {
