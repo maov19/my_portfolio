@@ -224,7 +224,7 @@ ul {
   height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 5000;
+  font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
@@ -239,13 +239,34 @@ ul {
   margin: 30px 0 10px 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 1000;
+  font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: #000;
-  gap: 10px;
+  gap: 5px;
+}
+
+.first_knowledge {
+  margin-bottom: 30px;
+}
+
+.third_knowledge {
+  margin-top: -0.1px;
+}
+
+hr { 
+  border: 0; 
+  clear:both; 
+  display:block; width: 96%; 
+  background-color:#DFE1E6; 
+  height: 1px; 
+}
+
+.arrow_down {
+  transform: rotate(90deg);
 }
 
 .languages {
@@ -264,22 +285,19 @@ ul {
 }
 
 .myself {
-  margin-top: -45px;
-  display: flex;
+  margin-top: -50px;
   width: 327px;
-  height: 146px;
+  height: 144px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 24px;
   color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .skills {
+  margin-left: -20px;
   display: grid;
   grid-template-columns: auto;
   gap: 8px;
