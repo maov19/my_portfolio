@@ -194,13 +194,14 @@ a:link {
 /* unordered list */
 .project_lang {
   padding: 0;
-  border: black solid;
+  
   width: 100%;
 }
 
 /* list elements */
+
 .lang_type {
-  display: flex;
+  float:left;
   flex-direction: row;
   align-items: stretch;
   padding: 4px 12px;
