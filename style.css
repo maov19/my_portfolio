@@ -89,7 +89,7 @@ a:link {
 }
 
 .social {
-  margin-top: -20px;
+  margin: -20px 0 90px 0;
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -176,7 +176,7 @@ a:link {
 }
 
 .project_description {
-  margin: 8px 0 -20px 0;
+  margin: 8px 0 -15px 0;
 }
 
 .project > p {
@@ -236,7 +236,8 @@ ul {
 }
 
 .about {
-  margin: 0 24px 0 24px;
+  margin: 0 24px 114px 24px;
+  border: black solid;
 }
 
 .intro_about {
@@ -257,7 +258,6 @@ ul {
 }
 
 .knowledge {
-  margin: 30px 0 10px 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -267,7 +267,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   color: #000;
-  gap: 5px;
+  margin: 30px 0 7px 0;
 }
 
 .first_knowledge {
@@ -275,7 +275,6 @@ ul {
 }
 
 .third_knowledge {
-  margin-top: -0.1px;
 }
 
 hr {
@@ -302,6 +301,10 @@ hr {
 }
 
 .lang_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
   width: 303px;
   height: 66.72px;
 }
@@ -320,13 +323,12 @@ hr {
 
 .skills {
   margin-left: -20px;
-  display: grid;
-  grid-template-columns: auto;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .resume_button {
-  margin-top: 10px;
+  margin:  10px 0 10px 0;
   width: 180px;
   height: auto;
   display: flex;
@@ -409,4 +411,37 @@ hr {
 .white_button:disabled {
   color: #5e6c84;
   border-color: #5e6c84;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 779px;
+  left: 0px;
+  top: 5410px;
+  background: #6070FF;
+  border: black solid;
+}
+
+.contact_me {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.contact_details {
+  font-family: 'Poppins';
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
