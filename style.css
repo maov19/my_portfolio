@@ -191,11 +191,14 @@ a:link {
   margin-top: -2px;
 }
 
+/* unordered list */
 .project_lang {
-  display: flex;
-  padding-left: 0;
+  padding: 0;
+  border: black solid;
+  width: 100%;
 }
 
+/* list elements */
 .lang_type {
   display: flex;
   flex-direction: row;
