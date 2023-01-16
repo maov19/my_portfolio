@@ -236,12 +236,15 @@ ul {
 }
 
 .about {
-  margin: 0 24px 114px 24px;
+  background-image: url('images/background1.png');
+  background-repeat: no-repeat;
+  padding: 55px 24px 24px 24px;
   border: black solid;
+  width: 325px;
+  margin-bottom: 60px;
 }
 
 .intro_about {
-  margin-top: 90px;
   width: 250px;
   height: 150px;
   font-family: 'Poppins', sans-serif;
@@ -272,18 +275,6 @@ ul {
 
 .first_knowledge {
   margin-bottom: 30px;
-}
-
-.third_knowledge {
-}
-
-hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;
-  background-color: #dfe1e6;
-  height: 1px;
 }
 
 .arrow_down {
@@ -416,12 +407,14 @@ hr {
 .contact_form {
   display: flex;
   flex-direction: column;
+  align-content: center;
   width: 375px;
   height: 779px;
   left: 0px;
   top: 5410px;
   background: #6070FF;
   border: black solid;
+  /* padding: 73px 0 0 45px; */
 }
 
 .contact_me {
@@ -444,4 +437,46 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+}
+
+.name, .email{
+  background: #FFFFFF;
+  border: 1px solid #Cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.message {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 327px;
+  height: 170px;
+  margin-bottom: 15px;
+
+}
+
+.get_in_touch {
+  width: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
