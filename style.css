@@ -1,4 +1,4 @@
-.header { 
+.header {
   background-image: url('images/background1.png');
   background-repeat: no-repeat;
   background-position: 100%;
@@ -318,7 +318,7 @@ ul {
 }
 
 .resume_button {
-  margin:  10px 0 10px 0;
+  margin: 10px 0 10px 0;
   width: 180px;
   height: auto;
   display: flex;
@@ -404,7 +404,7 @@ ul {
 }
 
 .contact_form {
-  background: url('images/background_contact.png'), #6070FF;
+  background: url('images/background_contact.png'), #6070ff;
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: 150px;
@@ -413,9 +413,9 @@ ul {
   align-content: center;
   width: 375px;
   height: 779px;
-  left: 0px;
+  left: 0;
   top: 5410px;
-  border: 1px solid #DFE1E6;
+  border: 1px solid #dfe1e6;
   border-top-left-radius: 80px;
 }
 
@@ -435,7 +435,7 @@ ul {
 
 .contact_details {
   margin: -20px 24px 50px 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   font-style: normal;
   font-weight: 400;
@@ -449,9 +449,10 @@ ul {
   margin: 0;
 }
 
-.name, .email{
-  background: #FFFFFF;
-  border: 1px solid #Cfd8dc;
+.name,
+.email {
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 273px;
   height: 18px;
@@ -472,14 +473,12 @@ ul {
   height: 140px;
   margin: 0 24px 15px 24px;
   padding: 15px 38px 15px 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
-
-
 }
 
 .get_in_touch {
