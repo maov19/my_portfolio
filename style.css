@@ -239,7 +239,6 @@ ul {
   background-image: url('images/background1.png');
   background-repeat: no-repeat;
   padding: 55px 24px 24px 24px;
-  border: black solid;
   width: 325px;
   margin-bottom: 60px;
 }
@@ -435,8 +434,6 @@ ul {
 }
 
 .contact_details {
-  /* width: 327px;
-  height: 102px; */
   margin: -20px 24px 50px 24px;
   font-family: 'Poppins';
   color: #fff;
@@ -445,6 +442,11 @@ ul {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+}
+
+.list_items {
+  padding: 0;
+  margin: 0;
 }
 
 .name, .email{
