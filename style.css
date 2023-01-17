@@ -1,19 +1,22 @@
-body {
+.header { 
   background-image: url('images/background1.png');
   background-repeat: no-repeat;
+  background-position: 100%;
+  padding-top: 78px;
+  height: 545px;
+  width: 375px;
+  margin-bottom: -40px;
 }
 
 .navbar {
-  width: 300px;
-  margin-left: 24px;
+  width: 315px;
+  padding: 45px 36px 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  width: 76px;
-  height: 20px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -40,11 +43,8 @@ a:link {
   left: 4px;
 }
 
-.header {
-  margin: 100px 24px 0 24px;
-}
-
 .intro {
+  margin-left: 24px;
   width: 250px;
   height: 150px;
   font-family: 'Poppins', sans-serif;
@@ -61,7 +61,7 @@ a:link {
 }
 
 .presentation {
-  margin-top: -20px;
+  margin: -20px 24px 10px 24px;
   display: flex;
   width: 327px;
   height: 146px;
@@ -89,11 +89,11 @@ a:link {
 }
 
 .social {
-  margin: -20px 0 90px 0;
+  margin: -20px 0 0 24px;
   display: flex;
   flex-direction: column;
   width: 140px;
-  height: 24px;
+  height: auto;
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -118,6 +118,7 @@ a:link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   padding: 16px;
   gap: 12px;
   width: 327px;
@@ -128,7 +129,7 @@ a:link {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin-bottom: 88px;
+  margin: 0 24px 88px 24px;
 }
 
 .project_image {
@@ -236,8 +237,7 @@ ul {
 }
 
 .about {
-  background-image: url('images/background1.png');
-  background-repeat: no-repeat;
+  margin-top: 28px;
   padding: 55px 24px 24px 24px;
   width: 325px;
   margin-bottom: 60px;
