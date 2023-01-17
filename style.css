@@ -405,6 +405,10 @@ ul {
 }
 
 .contact_form {
+  background: url('images/background_contact.png'), #6070FF;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 150px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -412,9 +416,8 @@ ul {
   height: 779px;
   left: 0px;
   top: 5410px;
-  background: #6070FF;
-  border: black solid;
-  /* padding: 73px 0 0 45px; */
+  border: 1px solid #DFE1E6;
+  border-top-left-radius: 80px;
 }
 
 .contact_me {
