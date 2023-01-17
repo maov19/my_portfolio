@@ -451,18 +451,32 @@ ul {
   background: #FFFFFF;
   border: 1px solid #Cfd8dc;
   border-radius: 8px;
-  width: 327px;
-  height: 48px;
+  width: 273px;
+  height: 18px;
+  padding: 15px 38px 15px 16px;
   margin: 0 24px 15px 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
 }
 
 .message {
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
-  width: 327px;
-  height: 170px;
+  width: 273px;
+  height: 140px;
   margin: 0 24px 15px 24px;
+  padding: 15px 38px 15px 16px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+
 
 }
 
@@ -472,6 +486,7 @@ ul {
   height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 12px;
   background: #fff;
   border: 1px solid #396df2;
@@ -487,4 +502,22 @@ ul {
   color: #396df2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.get_in_touch:hover {
+  color: white;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+.get_in_touch:active {
+  color: white;
+  background: #2230d2;
+  border-radius: 8px;
+}
+
+.get_in_touch:disabled {
+  color: #5e6c84;
+  border-color: #5e6c84;
 }
