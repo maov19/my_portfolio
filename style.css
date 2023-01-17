@@ -426,10 +426,15 @@ ul {
   line-height: 52px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  margin-top: 103px;
 }
 
 .contact_details {
+  /* width: 327px;
+  height: 102px; */
+  margin: -20px 24px 50px 24px;
   font-family: 'Poppins';
   color: #fff;
   font-style: normal;
@@ -445,7 +450,7 @@ ul {
   border-radius: 8px;
   width: 327px;
   height: 48px;
-  margin-bottom: 15px;
+  margin: 0 24px 15px 24px;
 }
 
 .message {
@@ -454,15 +459,15 @@ ul {
   border-radius: 8px;
   width: 327px;
   height: 170px;
-  margin-bottom: 15px;
+  margin: 0 24px 15px 24px;
 
 }
 
 .get_in_touch {
+  margin-left: 24px;
   width: 150px;
   height: auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 12px;
   background: #fff;
