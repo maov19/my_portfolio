@@ -156,7 +156,8 @@
     </section>
 
     <!-- contact form -->
-    <section class="contact_form">
+    <form action="https://formspree.io/f/mqkoaqwr"
+                        method="POST" class="contact_form">
         <h1 class="contact_me">Contact me</h1>
         <h2 class="contact_details">
             If you have an application you are interested in developing, 
@@ -165,20 +166,19 @@
         </h2>
         <ul class="list_items">
             <li>
-                <label for="name"></label>
                 <input class="name" type="text" maxlength="30" required placeholder="Your name here">
             </li>
             <li>
-                <label for="email"></label>
-                <input class="email" type="email" id="email" size="30" required placeholder="Your mail here">                
+                <input class="email" type="email" id="email" size="30" required placeholder="Your mail here">
             </li>
             <li>
-                <label for="msg"></label>
-                <textarea class="message" name="message" id="" cols="30" rows="10" maxlength="500" required placeholder="Write your message here"></textarea>
+            
+                <textarea class="message" name="message" id="" cols="30" rows="10" maxlength="500" required
+                    placeholder="Write your message here"></textarea>
             </li>
         </ul>
-        <button class="get_in_touch">Get in touch</button>
-    </section>
+        <button type="submit" class="get_in_touch">Get in touch</button>
+    </form>
        
 </body>
 </html>
