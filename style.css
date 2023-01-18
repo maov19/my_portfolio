@@ -108,8 +108,8 @@ a:link {
   gap: 16px;
 }
 
-/* Desktop: 768px or wider */
-@media only screen and (min-width: 500px) {
+/* Header Desktop: 768px or wider */
+@media only screen and (min-width: 1024px) {
   .navbar {
     border: black solid;
     width: 1440px;
@@ -141,6 +141,7 @@ a:link {
     background-image: url(images/background_desktop.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-bottom: 0;
   }
 
   /* must add spacing after Martin */
@@ -316,6 +317,70 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+}
+
+/* Works Desktop: 768px or wider */
+@media only screen and (min-width: 1024px) {
+  .works {
+    margin-top: 140px;
+  }
+
+  .project_image {
+    display: none;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+    margin: 0 142px 0 142px;
+    width: 1156px;
+    height: 496px;
+    background-image: url(images/project1_desktop.png);
+    background-position: 24px 24px;
+    background-repeat: no-repeat;
+  }
+
+  .project_title, .project_details, .project_description, .project_lang, .white_button {
+    margin-left: 614px;
+  }
+
+  .project_title {
+    border: black solid;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    width: 150px;
+    height: 46px;
+    margin-top: -75px;
+  }
+
+  .project_details {
+    border: #000 solid;
+    width: 350px;
+    margin-top: 0;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .project > p {
+    border: blue solid;
+    width: 470px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .project_lang {
+    margin-top: 30px;
+  }
 }
 
 .about {
@@ -603,4 +668,12 @@ ul {
 .get_in_touch:disabled {
   color: #5e6c84;
   border-color: #5e6c84;
+}
+
+/* Buttons Desktop: 768px or wider */
+@media only screen and (min-width: 1024px) {
+  .white_button {
+    margin-left: 614px;
+    margin-top: 15px;
+  }
 }
