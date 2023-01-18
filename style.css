@@ -319,7 +319,7 @@ ul {
   color: #172b4d;
 }
 
-/* Works Desktop: 768px or wider */
+/* Works Desktop: 768px or wider -> Pending templates 2, 3 and 4 */
 @media only screen and (min-width: 1024px) {
   .works {
     margin-top: 140px;
@@ -335,7 +335,7 @@ ul {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
-    margin: 0 142px 0 142px;
+    margin: 0 142px 142px 142px;
     width: 1156px;
     height: 496px;
     background-image: url(images/project1_desktop.png);
@@ -462,6 +462,26 @@ ul {
   margin-left: -20px;
   display: flex;
   flex-direction: column;
+}
+
+/* About Desktop: 768px or wider */
+@media only screen and (min-width: 1024px) {
+  .about {
+    border: #000 solid;
+    width: 1440px;
+    height: 668px;
+    display: flex;
+    padding: 0;
+  }
+
+  .intro_about, .social, .resume_button {
+    width: 50%;
+  }
+
+  .knowledge {
+    border: green solid;
+    width: 50px;
+  }
 }
 
 .resume_button {
