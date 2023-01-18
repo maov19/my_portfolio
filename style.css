@@ -464,23 +464,59 @@ ul {
   flex-direction: column;
 }
 
+.desktop_list {
+  display: none;
+}
+
 /* About Desktop: 768px or wider */
 @media only screen and (min-width: 1024px) {
   .about {
     border: #000 solid;
+    display: flex;
     width: 1440px;
     height: 668px;
     display: flex;
     padding: 0;
   }
 
-  .intro_about, .social, .resume_button {
-    width: 50%;
+  .intro_about {
+    border: #000 solid;
+    width: 150px;
+    height: 114px;
+    margin: 0;
   }
 
-  .knowledge {
-    border: green solid;
-    width: 50px;
+  .myself {
+    border: #000 solid;
+    width: 440px;
+    height: 102px;
+    margin: 0;
+  }
+
+  .left_desktop {
+    border: black solid;
+    width: 31%;
+    padding: 0;
+    margin: 130px 0 142px 142px;
+  }
+
+  .skills {
+    border: #000 solid;
+    width: 42%;
+    margin: 140px 0 0 15px;
+    padding: 0;
+  }
+
+  .lang_img {
+    display: none;
+  }
+  
+  .desktop_list {
+    display: flex;
+  }
+
+  .social_links, .connect {
+    margin-left: 0;
   }
 }
 
