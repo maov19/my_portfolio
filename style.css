@@ -108,6 +108,31 @@ a:link {
   gap: 16px;
 }
 
+/* Desktop: 768px or wider */
+@media only screen and (min-width: 500px) {
+  .navbar {
+    border: black solid;
+    width: 1440px;
+    height: 72px;
+    padding: 0;
+  }
+
+  .logo {
+    border: black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 155px;
+    width: 76px;
+    height: 20px;
+  }
+/* must add portfolio, contact and about */
+  .icon {
+    margin-right: 154px;
+  }
+  
+  }
+
 .works {
   margin-top: 150px;
   display: grid;
