@@ -732,4 +732,34 @@ ul {
     margin-left: 614px;
     margin-top: 15px;
   }
+
+  .contact_form {
+    width: 1440px;
+    height: 846px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(images/contact\ desktop.png), #6070ff;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 0;
+  }
+
+  .contact_me {
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
+
+  .contact_details {
+    width: 569px;
+    height: 102px;
+    margin-bottom: 0;
+  }
+
+  .name, .email, .message {
+    margin-top: 15px;
+    width: 447px;
+  }
 }
