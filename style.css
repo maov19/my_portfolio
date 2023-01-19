@@ -2,10 +2,9 @@
   background-image: url('images/background1.png');
   background-repeat: no-repeat;
   background-position: 100%;
-  padding-top: 78px;
+  padding: 76px 0 0 24px;
   height: 545px;
-  width: 375px;
-  margin-bottom: -40px;
+  width: 349px;
 }
 
 .navbar {
@@ -48,24 +47,23 @@ a:link {
 }
 
 .intro {
-  margin-left: 24px;
-  width: 250px;
+  width: 300px;
   height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #172b4d;
-  flex: none;
-  order: 0;
   flex-grow: 0;
+  margin-bottom: 0px;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .presentation {
-  margin: -20px 24px 10px 24px;
   display: flex;
   width: 327px;
   height: 146px;
@@ -93,7 +91,7 @@ a:link {
 }
 
 .social {
-  margin: -20px 0 0 24px;
+  margin: 0
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -115,14 +113,12 @@ a:link {
 /* Header Desktop: 768px or wider */
 @media only screen and (min-width: 1024px) {
   .navbar {
-    border: black solid;
     width: 1440px;
     height: 72px;
     padding: 0;
   }
 
   .logo {
-    border: black solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,12 +132,10 @@ a:link {
   }
 
   .menu {
-    border: #000 solid;
     display: flex;
     margin-right: 120px;
     width: 250px;
     justify-content: space-between;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -153,26 +147,24 @@ a:link {
   }
 
   .header {
-    border: black solid;
-    width: 1440px;
-    height: 845px;   
-    padding: 0; 
+    width: 1180px;
+    height: 750px;
+    padding: 25px 20px 20px 260px;
     background: none;
     background-image: url(images/background_desktop.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  /* must add spacing after Martin */
   .intro {
-    border: black solid;
-    width: 390px;
+    width: auto;
     height: 122px;
     display: flex;
     flex: wrap;
     padding: 0;
-    margin: 265px 0 0 260px;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -182,28 +174,20 @@ a:link {
   }
 
   .presentation {
-    border: black solid;
     width: 920px;
     height: 98px;
-    margin: 3px 260px 0 260px;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
   }
-
-  .social {
-    margin: 12px 0 0 260px;
-  }
   
   .connect {
-    border: black solid;
-    margin: 3px 0 0 260px;
+    margin: 20px 0 0 260px;
     width: 200px;
     height: 24px;
   }
 
   .social_links {
-    border: blue solid;
     margin: 3px 0 0 260px;
     padding: 0;
     width: 140px;
@@ -216,7 +200,7 @@ a:link {
   display: grid;
 }
 
-.project {
+.project, .project_multipost {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -259,11 +243,7 @@ a:link {
   margin-bottom: 0;
 }
 
-.project_image_desktop {
-  display: none;
-}
-
-.project_title {
+.project_title, .project_title_3, .project_title_both {
   margin: 0;
   width: 100px;
   height: 36px;
@@ -280,7 +260,7 @@ a:link {
   height: 8px;
 }
 
-.project_details, .project_details_desktop {
+.project_details, .project_details_desktop, .project_details_both {
   display: flex;
   width: 250px;
   height: 28px;
@@ -288,7 +268,7 @@ a:link {
   align-items: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 9px;
   line-height: 16px;
   color: #344563;
@@ -298,7 +278,7 @@ a:link {
   color: #7a869a;
 }
 
-.project_description {
+.project_description, .project_description_3, .project_description_both {
   margin: 0;
   width: 295px;
   height: 76px;
@@ -355,6 +335,10 @@ ul {
   color: #172b4d;
 }
 
+.project_image_desktop, .project_details_desktop, .project_description_desktop, .project_title_desktop, .organization_desktop {
+  display: none;
+}
+
 /* Works Desktop: 768px or wider -> Pending templates 2, 3 and 4 */
 @media only screen and (min-width: 1024px) {
   .works {
@@ -381,27 +365,19 @@ ul {
     padding: 10px;
   }
 
-  .project_image_desktop {
-    display: flex;
-    width: 50%;
-    margin-bottom: 10px;
-  }
-
   .desktop_text, .desktop_text_multipost {
     display: flex;
     margin: 15px 0 0 25px;
-    border: blue solid;
     width: 50%;
     height: 70%;
     padding: 10px;
   }
 
-  .project_image, .organization_3, .project_title_3, .project_description_3, .project_details {
+  .project_image, .organization_3, .project_description_3, .project_details, .project_description, .project_title {
     display: none;
   }
 
-  .project_title {
-    border: black solid;
+  .project_title, .project_title_3, .project_title_both {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -411,8 +387,8 @@ ul {
   }
 
   .project_title_desktop {
+    display: flex;
     font-family: 'Poppins', sans-serif;
-    border: black solid;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -421,23 +397,13 @@ ul {
     margin: 0;
   }
 
-  .project_details, .project_details_desktop {
-    border: #000 solid;
-    width: 350px;
-    margin: 0;
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 24px;
-  }
-
   .project_description, .project_description_desktop {
-    border: green solid;
     height: auto;
     width: 90%;
   }
 
   .project > p, .project_description_desktop {
-    border: blue solid;
+    display: flex;
     width: 470px;
     height: 50px;
     font-family: 'Poppins', sans-serif;
@@ -460,10 +426,12 @@ ul {
   }
 
   .project_image_desktop {
+    display: flex;
     width: 544px;
     height: 448px;
-    margin: 10px;
+    margin: 10px 0 10px 0;
   }
+
 
   .multipost {
     width: auto;
@@ -472,6 +440,19 @@ ul {
     font-size: 40px;
     line-height: 52px;
     color: #091E42;
+  }
+
+  .project_details_desktop, .project_details_both {
+    display: flex;
+    width: 350px;
+    margin: 0;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .organization_desktop {
+    display: flex;
   }
 }
 
@@ -563,36 +544,36 @@ ul {
 /* About Desktop: 768px or wider */
 @media only screen and (min-width: 1024px) {
   .about {
-    border: #000 solid;
     display: flex;
     width: 1440px;
     height: 668px;
     padding: 0;
+    margin-bottom: 0;
   }
 
   .intro_about {
-    border: #000 solid;
     width: 150px;
     height: 114px;
-    margin: 0;
+    margin: 0 0 10px;
   }
 
   .myself {
-    border: #000 solid;
     width: 440px;
     height: 102px;
     margin: 0;
   }
 
   .left_desktop {
-    border: black solid;
+    display: flex;
+    flex-direction: column;
     width: 31%;
     padding: 0;
     margin: 130px 0 142px 142px;
+    height: 60%;
+    justify-content: space-between;
   }
 
   .skills {
-    border: #000 solid;
     width: 42%;
     margin: 140px 0 0 15px;
     padding: 0;
@@ -622,9 +603,6 @@ ul {
   background: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
