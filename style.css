@@ -131,7 +131,6 @@ a:link {
     height: 20px;
   }
 
-  /* must add portfolio, contact and about */
   .icon {
     display: none;
   }
@@ -236,17 +235,36 @@ a:link {
   margin: 0 24px 88px 24px;
 }
 
+.desktop_text {
+  display: flex;
+  height: 275px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.desktop_text_multipost {
+  display: flex;
+  height: 310px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
 .project_image {
   width: 295px;
   height: 220px;
   border-radius: 8px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
+  margin-bottom: 0;
+}
+
+.project_image_desktop {
+  display: none;
 }
 
 .project_title {
-  margin: 0 0 -4px;
+  margin: 0;
   width: 100px;
   height: 36px;
   font-family: "Poppins", sans-serif;
@@ -281,10 +299,7 @@ a:link {
 }
 
 .project_description {
-  margin: 8px 0 -15px 0;
-}
-
-.project > p {
+  margin: 0;
   width: 295px;
   height: 76px;
   font-family: 'Poppins', sans-serif;
@@ -293,12 +308,12 @@ a:link {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  margin-top: -2px;
 }
 
 .project_lang {
   display: flex;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .lang_type {
@@ -344,28 +359,36 @@ ul {
 @media only screen and (min-width: 1024px) {
   .works {
     margin-top: 140px;
-  }
-
-  .project_image {
-    display: none;
+    display: grid;
   }
 
   .project {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     margin: 0 142px 142px 142px;
     width: 1156px;
     height: 496px;
-    background-image: url(images/project1_desktop.png);
-    background-position: 24px 24px;
-    background-repeat: no-repeat;
   }
 
-  .project_title, .project_details, .project_description, .project_lang, .white_button {
-    margin-left: 614px;
+  .project_image_desktop {
+    display: flex;
+    border: green solid;
+    width: 50%;
+  }
+
+  .desktop_text {
+    display: flex;
+    margin: 20px 0 0 25px;
+    border: blue solid;
+    width: 50%;
+    height: 70%;
+  }
+
+  .project_image {
+    display: none;
   }
 
   .project_title {
@@ -375,16 +398,22 @@ ul {
     line-height: 52px;
     width: 150px;
     height: 46px;
-    margin-top: -75px;
+    margin: 0;
   }
 
   .project_details {
     border: #000 solid;
     width: 350px;
-    margin-top: 0;
+    margin: 0;
     font-weight: 400px;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .project_description {
+    border: green solid;
+    height: auto;
+    width: 90%;
   }
 
   .project > p {
@@ -397,10 +426,11 @@ ul {
     font-size: 15px;
     line-height: 24px;
     color: #344563;
+    margin: 0;
   }
 
   .project_lang {
-    margin-top: 30px;
+    margin: 0;
   }
 }
 
@@ -496,7 +526,6 @@ ul {
     display: flex;
     width: 1440px;
     height: 668px;
-    display: flex;
     padding: 0;
   }
 
@@ -606,7 +635,6 @@ ul {
   letter-spacing: 0.03em;
   grid-row-start: 6;
   grid-column: 1/2;
-  margin: -8px 0 25px 0;
 }
 
 .white_button:hover {
@@ -749,11 +777,6 @@ ul {
 
 /* Buttons Desktop: 768px or wider */
 @media only screen and (min-width: 1024px) {
-  .white_button {
-    margin-left: 614px;
-    margin-top: 15px;
-  }
-
   .contact_form {
     width: 1440px;
     height: 846px;
