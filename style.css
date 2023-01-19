@@ -43,6 +43,10 @@ a:link {
   left: 4px;
 }
 
+.menu {
+  display: none;
+}
+
 .intro {
   margin-left: 24px;
   width: 250px;
@@ -129,7 +133,24 @@ a:link {
 
   /* must add portfolio, contact and about */
   .icon {
-    margin-right: 154px;
+    display: none;
+  }
+
+  .menu {
+    border: #000 solid;
+    display: flex;
+    margin-right: 120px;
+    width: 250px;
+    justify-content: space-between;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #344563;
   }
 
   .header {
