@@ -56,8 +56,7 @@ a:link {
   line-height: 52px;
   color: #172b4d;
   flex-grow: 0;
-  margin-bottom: 0px;
-
+  margin-bottom: 0;
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
@@ -91,7 +90,7 @@ a:link {
 }
 
 .social {
-  margin: 0
+  margin: 0;
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -111,7 +110,7 @@ a:link {
 }
 
 /* Header Desktop: 768px or wider */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .navbar {
     width: 1440px;
     height: 72px;
@@ -136,7 +135,7 @@ a:link {
     margin-right: 120px;
     width: 250px;
     justify-content: space-between;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -168,7 +167,6 @@ a:link {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    display: flex;
     align-items: center;
     letter-spacing: 0.37px;
   }
@@ -180,7 +178,7 @@ a:link {
     font-size: 20px;
     line-height: 28px;
   }
-  
+
   .connect {
     margin: 20px 0 0 260px;
     width: 200px;
@@ -191,16 +189,17 @@ a:link {
     margin: 3px 0 0 260px;
     padding: 0;
     width: 140px;
-    height: auto; 
+    height: auto;
   }
 }
-  
+
 .works {
   margin-top: 150px;
   display: grid;
 }
 
-.project, .project_multipost {
+.project,
+.project_multipost {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -243,7 +242,9 @@ a:link {
   margin-bottom: 0;
 }
 
-.project_title, .project_title_3, .project_title_both {
+.project_title,
+.project_title_3,
+.project_title_both {
   margin: 0;
   width: 100px;
   height: 36px;
@@ -260,7 +261,9 @@ a:link {
   height: 8px;
 }
 
-.project_details, .project_details_desktop, .project_details_both {
+.project_details,
+.project_details_desktop,
+.project_details_both {
   display: flex;
   width: 250px;
   height: 28px;
@@ -278,7 +281,9 @@ a:link {
   color: #7a869a;
 }
 
-.project_description, .project_description_3, .project_description_both {
+.project_description,
+.project_description_3,
+.project_description_both {
   margin: 0;
   width: 295px;
   height: 76px;
@@ -335,18 +340,23 @@ ul {
   color: #172b4d;
 }
 
-.project_image_desktop, .project_details_desktop, .project_description_desktop, .project_title_desktop, .organization_desktop {
+.project_image_desktop,
+.project_details_desktop,
+.project_description_desktop,
+.project_title_desktop,
+.organization_desktop {
   display: none;
 }
 
 /* Works Desktop: 768px or wider -> Pending templates 2, 3 and 4 */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .works {
     margin-top: 140px;
     display: grid;
   }
 
-  .project, .project_multipost {
+  .project,
+  .project_multipost {
     display: flex;
     flex-direction: row;
     background: #fff;
@@ -356,7 +366,6 @@ ul {
     width: 1156px;
     height: 496px;
     padding: 10px;
-
   }
 
   .project_multipost {
@@ -365,7 +374,8 @@ ul {
     padding: 10px;
   }
 
-  .desktop_text, .desktop_text_multipost {
+  .desktop_text,
+  .desktop_text_multipost {
     display: flex;
     margin: 15px 0 0 25px;
     width: 50%;
@@ -373,11 +383,18 @@ ul {
     padding: 10px;
   }
 
-  .project_image, .organization_3, .project_description_3, .project_details, .project_description, .project_title {
+  .project_image,
+  .organization_3,
+  .project_description_3,
+  .project_details,
+  .project_description,
+  .project_title {
     display: none;
   }
 
-  .project_title, .project_title_3, .project_title_both {
+  .project_title,
+  .project_title_3,
+  .project_title_both {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -397,12 +414,14 @@ ul {
     margin: 0;
   }
 
-  .project_description, .project_description_desktop {
+  .project_description,
+  .project_description_desktop {
     height: auto;
     width: 90%;
   }
 
-  .project > p, .project_description_desktop {
+  .project > p,
+  .project_description_desktop {
     display: flex;
     width: 470px;
     height: 50px;
@@ -432,17 +451,17 @@ ul {
     margin: 10px 0 10px 0;
   }
 
-
   .multipost {
     width: auto;
     height: auto;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #091E42;
+    color: #091e42;
   }
 
-  .project_details_desktop, .project_details_both {
+  .project_details_desktop,
+  .project_details_both {
     display: flex;
     width: 350px;
     margin: 0;
@@ -542,7 +561,7 @@ ul {
 }
 
 /* About Desktop: 768px or wider */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .about {
     display: flex;
     width: 1440px;
@@ -582,12 +601,13 @@ ul {
   .lang_img {
     display: none;
   }
-  
+
   .desktop_list {
     display: flex;
   }
 
-  .social_links, .connect {
+  .social_links,
+  .connect {
     margin-left: 0;
   }
 }
@@ -795,7 +815,7 @@ ul {
 }
 
 /* Buttons Desktop: 768px or wider */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .contact_form {
     width: 1440px;
     height: 846px;
@@ -821,7 +841,9 @@ ul {
     margin-bottom: 0;
   }
 
-  .name, .email, .message {
+  .name,
+  .email,
+  .message {
     margin-top: 15px;
     width: 447px;
   }
