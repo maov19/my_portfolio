@@ -1,11 +1,15 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 .header {
   background-image: url('images/background1.png');
   background-repeat: no-repeat;
   background-position: 100%;
-  padding-top: 78px;
+  padding: 76px 0 0 24px;
   height: 545px;
-  width: 375px;
-  margin-bottom: -40px;
+  width: 349px;
 }
 
 .navbar {
@@ -43,25 +47,27 @@ a:link {
   left: 4px;
 }
 
+.menu {
+  display: none;
+}
+
 .intro {
-  margin-left: 24px;
-  width: 250px;
+  width: 300px;
   height: 150px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #172b4d;
-  flex: none;
-  order: 0;
   flex-grow: 0;
+  margin-bottom: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .presentation {
-  margin: -20px 24px 10px 24px;
   display: flex;
   width: 327px;
   height: 146px;
@@ -89,7 +95,7 @@ a:link {
 }
 
 .social {
-  margin: -20px 0 0 24px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   width: 140px;
@@ -113,7 +119,8 @@ a:link {
   display: grid;
 }
 
-.project {
+.project,
+.project_multipost {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -132,17 +139,34 @@ a:link {
   margin: 0 24px 88px 24px;
 }
 
+.desktop_text {
+  display: flex;
+  height: 275px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.desktop_text_multipost {
+  display: flex;
+  height: 310px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
 .project_image {
   width: 295px;
   height: 220px;
   border-radius: 8px;
   flex: none;
-  order: 0;
-  flex-grow: 0;
+  margin-bottom: 0;
 }
 
-.project_title {
-  margin: 0 0 -4px;
+.project_title,
+.project_title_3,
+.project_title_both {
+  margin: 0;
   width: 100px;
   height: 36px;
   font-family: "Poppins", sans-serif;
@@ -158,7 +182,9 @@ a:link {
   height: 8px;
 }
 
-.project_details {
+.project_details,
+.project_details_desktop,
+.project_details_both {
   display: flex;
   width: 250px;
   height: 28px;
@@ -166,7 +192,7 @@ a:link {
   align-items: center;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 9px;
   line-height: 16px;
   color: #344563;
@@ -176,11 +202,10 @@ a:link {
   color: #7a869a;
 }
 
-.project_description {
-  margin: 8px 0 -15px 0;
-}
-
-.project > p {
+.project_description,
+.project_description_3,
+.project_description_both {
+  margin: 0;
   width: 295px;
   height: 76px;
   font-family: 'Poppins', sans-serif;
@@ -189,12 +214,12 @@ a:link {
   font-size: 15px;
   line-height: 24px;
   color: #344563;
-  margin-top: -2px;
 }
 
 .project_lang {
   display: flex;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .lang_type {
@@ -234,6 +259,14 @@ ul {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+}
+
+.project_image_desktop,
+.project_details_desktop,
+.project_description_desktop,
+.project_title_desktop,
+.organization_desktop {
+  display: none;
 }
 
 .about {
@@ -317,6 +350,10 @@ ul {
   flex-direction: column;
 }
 
+.desktop_list {
+  display: none;
+}
+
 .resume_button {
   margin: 10px 0 10px 0;
   width: 180px;
@@ -328,9 +365,6 @@ ul {
   background: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -382,7 +416,6 @@ ul {
   letter-spacing: 0.03em;
   grid-row-start: 6;
   grid-column: 1/2;
-  margin: -8px 0 25px 0;
 }
 
 .white_button:hover {
@@ -521,4 +554,299 @@ ul {
 .get_in_touch:disabled {
   color: #5e6c84;
   border-color: #5e6c84;
+}
+
+/* Buttons Desktop: 768px or wider */
+@media only screen and (min-width: 768px) {
+  .contact_form {
+    width: 1440px;
+    height: 846px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(images/contact\ desktop.png), #6070ff;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 0;
+  }
+
+  .contact_me {
+    margin: 0 0 40px 0;
+    padding: 0;
+  }
+
+  .contact_details {
+    width: 569px;
+    height: 102px;
+    margin-bottom: 0;
+  }
+
+  .name,
+  .email,
+  .message {
+    margin-top: 15px;
+    width: 447px;
+  }
+
+  /* Header Desktop: 768px or wider */
+
+  .navbar {
+    width: 1440px;
+    height: 72px;
+    padding: 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 155px;
+    width: 76px;
+    height: 20px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 120px;
+    width: 250px;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .header {
+    width: 1180px;
+    height: 750px;
+    padding: 25px 20px 20px 260px;
+    background: none;
+    background-image: url(images/background_desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro {
+    width: auto;
+    height: 122px;
+    display: flex;
+    flex: wrap;
+    padding: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    align-items: center;
+    letter-spacing: 0.37px;
+  }
+
+  .presentation {
+    width: 920px;
+    height: 98px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .connect {
+    margin: 20px 0 0 260px;
+    width: 200px;
+    height: 24px;
+  }
+
+  .social_links {
+    margin: 3px 0 0 260px;
+    padding: 0;
+    width: 140px;
+    height: auto;
+  }
+
+  /* Works Desktop: 768px or wider -> Pending templates 2, 3 and 4 */
+
+  .works {
+    margin-top: 140px;
+    display: grid;
+  }
+
+  .project,
+  .project_multipost {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+    margin: 0 142px 142px 142px;
+    width: 1156px;
+    height: 496px;
+    padding: 10px;
+  }
+
+  .project_multipost {
+    flex-direction: row-reverse;
+    height: 476px;
+    padding: 10px;
+  }
+
+  .desktop_text,
+  .desktop_text_multipost {
+    display: flex;
+    margin: 15px 0 0 25px;
+    width: 50%;
+    height: 70%;
+    padding: 10px;
+  }
+
+  .project_image,
+  .organization_3,
+  .project_description_3,
+  .project_details,
+  .project_description,
+  .project_title {
+    display: none;
+  }
+
+  .project_title,
+  .project_title_3,
+  .project_title_both {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    width: 150px;
+    height: 46px;
+    margin: 0;
+  }
+
+  .project_title_desktop {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    width: auto;
+    height: 46px;
+    margin: 0;
+  }
+
+  .project_description,
+  .project_description_desktop {
+    height: auto;
+    width: 90%;
+  }
+
+  .project > p,
+  .project_description_desktop {
+    display: flex;
+    width: 470px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+    margin: 0;
+  }
+
+  .project_lang {
+    margin: 0;
+  }
+
+  .desktop_text_multipost {
+    width: 50%;
+    height: 68%;
+    margin: 35px 0 0 0;
+  }
+
+  .project_image_desktop {
+    display: flex;
+    width: 544px;
+    height: 448px;
+    margin: 10px 0 10px 0;
+  }
+
+  .multipost {
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .project_details_desktop,
+  .project_details_both {
+    display: flex;
+    width: 350px;
+    margin: 0;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .organization_desktop {
+    display: flex;
+  }
+
+  /* About Desktop: 768px or wider */
+
+  .about {
+    display: flex;
+    width: 1440px;
+    height: 668px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .intro_about {
+    width: 150px;
+    height: 114px;
+    margin: 0 0 10px;
+  }
+
+  .myself {
+    width: 440px;
+    height: 102px;
+    margin: 0;
+  }
+
+  .left_desktop {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    padding: 0;
+    margin: 130px 0 142px 142px;
+    height: 60%;
+    justify-content: space-between;
+  }
+
+  .skills {
+    width: 42%;
+    margin: 140px 0 0 15px;
+    padding: 0;
+  }
+
+  .lang_img {
+    display: none;
+  }
+
+  .desktop_list {
+    display: flex;
+  }
+
+  .social_links,
+  .connect {
+    margin-left: 0;
+  }
 }
