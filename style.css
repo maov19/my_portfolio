@@ -418,6 +418,7 @@ ul {
   letter-spacing: 0.03em;
   grid-row-start: 6;
   grid-column: 1/2;
+  transition: all .4s;
 }
 
 .white_button:hover {
