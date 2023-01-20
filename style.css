@@ -538,6 +538,8 @@ ul {
   color: #396df2;
   text-align: center;
   letter-spacing: 0.03em;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .get_in_touch:hover {
