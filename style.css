@@ -373,7 +373,7 @@ ul {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .resume_button:hover {
@@ -418,7 +418,7 @@ ul {
   letter-spacing: 0.03em;
   grid-row-start: 6;
   grid-column: 1/2;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .white_button:hover {
