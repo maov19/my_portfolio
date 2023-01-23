@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->The live link will be updated soon
+>[My portfolio website](https://maov19.github.io/my_portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
