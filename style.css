@@ -362,6 +362,7 @@ ul {
   flex-direction: column;
   align-items: center;
   padding: 12px;
+  color: #396df2;
   background: #fff;
   border: 1px solid #396df2;
   border-radius: 8px;
@@ -370,16 +371,17 @@ ul {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396df2;
   text-align: center;
   letter-spacing: 0.03em;
+  transition: all 0.5s;
 }
 
 .resume_button:hover {
   color: white;
-  background: #6070ff;
+  background-color: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .resume_button:active {
@@ -416,6 +418,7 @@ ul {
   letter-spacing: 0.03em;
   grid-row-start: 6;
   grid-column: 1/2;
+  transition: all 0.4s;
 }
 
 .white_button:hover {
@@ -536,6 +539,8 @@ ul {
   color: #396df2;
   text-align: center;
   letter-spacing: 0.03em;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
 .get_in_touch:hover {
