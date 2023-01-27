@@ -52,6 +52,7 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > This repo is deployed to design my personal projects portfolio.
+> >[My portfolio - Video Walkthrough](https://loom.com/share/551469ddeb674a45bdea40588b864a39)
 
 <!-- AUTHORS -->
 
