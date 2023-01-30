@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->The live link will be updated soon
+>[My portfolio website](https://maov19.github.io/my_portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,6 +52,7 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 > This repo is deployed to design my personal projects portfolio.
+> >[My portfolio - Video Walkthrough](https://loom.com/share/551469ddeb674a45bdea40588b864a39)
 
 <!-- AUTHORS -->
 
