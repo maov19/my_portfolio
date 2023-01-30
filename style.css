@@ -50,7 +50,7 @@ a:link {
   outline: none;
   border: none;
   background: none;
-
+  z-index: 99;
 }
 
 .icon .bar, .icon:after, .icon:before {
@@ -73,6 +73,33 @@ a:link {
 
 .icon.is-active .bar {
   opacity: 0;
+}
+
+.menuAll {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: white;
+  padding-top: 120px;
+  transition: 0.4s;
+}
+
+.menuAll.is-active {
+  left: 0;
+
+}
+
+.menuAll ul li {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
 }
 
 
