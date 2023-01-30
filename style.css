@@ -40,16 +40,41 @@ a:link {
 }
 
 .icon {
-  display: flex;
+  position: relative;
+  display: block;
   color: #6070ff;
-  width: 16px;
-  top: 17px;
-  left: 4px;
+  width: 17.5px;
+  cursor: pointer;
+  
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+
 }
 
-.icon .icon.open {
-  
+.icon .bar, .icon:after, .icon:before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #6070ff;
+  margin: 6px 0px;
+  transition: 0.4s;
 }
+
+.icon.is-active:before {
+  transform: translate(-8px, 6px) rotate(-45deg);
+}
+
+.icon.is-active::after {
+  transform: translate(-9px, 28px) rotate(45deg);
+}
+
+.icon.is-active .bar {
+  opacity: 0;
+}
+
 
 .menu {
   display: none;
