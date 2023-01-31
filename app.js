@@ -1,18 +1,14 @@
+const icon = document.getElementById('icon');
+const menu = document.getElementById('menuAll');
 
-let menu = document.getElementById('icon');
-let image = document.getElementById('hamburger');
+icon.onclick = function a() {
+  icon.classList.toggle('is-active');
+  menu.classList.toggle('is-active');
+};
 
-let styles = {
-    display: 'block',
-    border: '2px solid blue',
-    position: 'relative',
-    top: '25px',
-    padding: '10px',
-    'font-family': 'poppins',
-}
-
-let menuAll = document.getElementById('menuAll')
-menu.addEventListener('click', function() {
-    menu.style.display = 'none'
-    Object.assign(menuAll.style, styles)
-})
+document.onclick = function b(clickEvent) {
+  if (clickEvent.target.id !== 'menuAll' && clickEvent.target.id !== 'icon') {
+    icon.classList.remove('is-active');
+    menu.classList.remove('is-active');
+  }
+};

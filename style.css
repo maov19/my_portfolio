@@ -40,11 +40,82 @@ a:link {
 }
 
 .icon {
-  display: flex;
-  color: #6070ff;
-  width: 16px;
-  top: 17px;
-  left: 4px;
+  position: relative;
+  display: block;
+  width: 17.5px;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  z-index: 99;
+}
+
+.icon .bar,
+.icon::after,
+.icon::before {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #6070ff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.icon.is-active::before {
+  transform: rotate(45deg) translate(0, 15px);
+  background-color: white;
+  position: relative;
+}
+
+.icon.is-active::after {
+  transform: rotate(-45deg) translate(0, -15px);
+  background-color: white;
+  position: relative;
+}
+
+.icon.is-active .bar {
+  opacity: 0;
+}
+
+#menuAll {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  padding-top: 40px;
+  transition: 0.4s;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#menuAll.is-active {
+  left: 0;
+  color: white;
+  background: #6070ff;
+  backdrop-filter: blur(10px);
+  mix-blend-mode: multiply;
+}
+
+#menuAll ul li {
+  color: white;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  text-align: start;
+  padding: 12px 16px;
+}
+
+#menuAll ul li a {
+  color: white;
 }
 
 .menu {
@@ -648,7 +719,6 @@ ul {
     width: auto;
     height: 122px;
     display: flex;
-    flex: wrap;
     padding: 0;
     font-weight: 700;
     font-size: 48px;
@@ -795,7 +865,7 @@ ul {
     display: flex;
     width: 350px;
     margin: 0;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
   }

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Martin's Portfolio</title>
 </head>
 <body>
     <!-- navbar -->
@@ -19,21 +19,30 @@
             <h2 class="logo"><strong>My Logo</strong></h2>
         </a>
         <nav>
-        <a class="icon">
-            <i class="fa fa-bars"></i>
-        </a>
+        <button class="icon" id="icon">
+            <div class="bar">
+                
+            </div>
+        </button>
         </nav>
-        <ul class="menu">
+        <ul class="menu" >
             <li>Portfolio</li>
             <li>About</li>
             <li>Contact</li>
         </ul>
     </nav>
-    </header>
+        <div id="menuAll">
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+        </header>
 
     <!-- headline -->
     <section class="header">  
-        <h1 class="intro">I'm Martin </br> Glad to see you!</h1>
+        <h1 id="intro" class="intro">I'm Martin </br> Glad to see you!</h1>
         <h2 class="presentation">
             I'm a software developer! I can help you build a product, feature a website. 
             Look through some of my work and experience!
@@ -52,7 +61,7 @@
     </section>
 
     <!-- works -->
-    <section class="works">
+    <section id="portfolio" class="works">
         <div class="project">
             <img class="project_image" src="images/work1.png" alt="first project">
             <img class="project_image_desktop" src="images/project1_desktop.png" alt="project 1">
@@ -160,7 +169,7 @@
     </section>
 
     <!-- about -->
-    <section class="about">
+    <section id="about" class="about">
             <section class="left_desktop">
             <div>
                 <h1 class="intro_about">About Myself</h1>
@@ -196,7 +205,7 @@
     </section>
 
     <!-- contact form -->
-    <form action="https://formspree.io/f/mqkoaqwr" method="POST" class="contact_form">
+    <form id="contact" action="https://formspree.io/f/mqkoaqwr" method="POST" class="contact_form">
         <h1 class="contact_me">Contact me</h1>
         <h2 class="contact_details">
             If you have an application you are interested in developing, 
@@ -207,7 +216,8 @@
         <input class="email" type="email" id="email" size="30" required placeholder="Your mail here">          
         <textarea class="message" name="message" id="" cols="30" rows="10" maxlength="500" required placeholder="Write your message here"></textarea>
         <button type="submit" class="get_in_touch">Get in touch</button>
+    </form>  
+    <script src="./app.js"></script>
     </form>
-       
 </body>
 </html>
