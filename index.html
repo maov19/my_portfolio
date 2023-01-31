@@ -80,9 +80,10 @@
                     <li><button class="lang_type">css</button></li>
                     <li><button class="lang_type">javaScript</button></li>
                 </ul>
-                <button class="white_button">See Project</button>
+                <button data-modal-target="#modal" class="white_button">See Project</button>
             </div>
-        </div>
+            
+            </div>
         <div class="project_multipost">
             <img class="project_image" src="images/work2.png" alt="first project">
             <img class="project_image_desktop" src="images/project2_desktop.png" alt="second project">
@@ -109,7 +110,7 @@
                     <li><button class="lang_type">css</button></li>
                     <li><button class="lang_type">javaScript</button></li>
                 </ul>
-            <button class="white_button">See Project</button>
+            <button data-modal-target="#modal" class="white_button">See Project</button>
             </div>
         </div>
         <div class="project">
@@ -133,7 +134,7 @@
                 <li><button class="lang_type">css</button></li>
                 <li><button class="lang_type">javaScript</button></li>
             </ul>
-            <button class="white_button">See Project</button>
+            <button data-modal-target="#modal" class="white_button">See Project</button>
             </div>
         </div>
         <div class="project_multipost">
@@ -163,9 +164,25 @@
                 <li><button class="lang_type">css</button></li>
                 <li><button class="lang_type">javaScript</button></li>
             </ul>
-            <button class="white_button">See Project</button>
+            <button data-modal-target="#modal" class="white_button">See Project</button>
             </div>
         </div>
+    </section>
+
+    <!-- popups
+    popups setup to adjust to content later -->
+    <section>
+    <button data-modal-target="#modal">Open Modal</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <h1 class="modal-title">Example</h1>
+            <button data-close-button class="close-button">&times;</button>               
+        </div>
+        <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nam eligendi, labore soluta minus praesentium facilis ad necessitatibus. Eos nostrum, aut quod natus obcaecati fugiat minus fugit quam ea sint nemo id sequi iusto optio ducimus eaque magni praesentium animi molestiae quidem tempora? Dolor, repudiandae sed eum reprehenderit expedita praesentium inventore magnam fugit voluptatibus alias hic est animi repellendus repellat architecto doloremque nihil libero. Eius reiciendis esse eum inventore rerum, cum, minus quia consequuntur id officia iste atque distinctio fuga?
+        </div>
+        <div id="overlay"></div>
+    </div>
     </section>
 
     <!-- about -->
