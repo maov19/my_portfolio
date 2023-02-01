@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -339,6 +340,17 @@ ul {
 .organization_desktop {
   display: none;
 }
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+  position: fixed;
+  top: 0;
+}
+
+
+
 
 .about {
   margin-top: 28px;

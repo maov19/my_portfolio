@@ -12,6 +12,9 @@
     <title>Martin's Portfolio</title>
 </head>
 <body>
+    <!-- popups overlay -->
+    <div id="overlay"></div>
+
     <!-- navbar -->
     <header>
     <nav class="navbar">
@@ -62,7 +65,7 @@
 
     <!-- works -->
     <section id="portfolio" class="works">
-        <div class="project">
+        <div id="first-item" class="project">
             <img class="project_image" src="images/work1.png" alt="first project">
             <img class="project_image_desktop" src="images/project1_desktop.png" alt="project 1">
             <div class="desktop_text">
@@ -80,10 +83,10 @@
                     <li><button class="lang_type">css</button></li>
                     <li><button class="lang_type">javaScript</button></li>
                 </ul>
-                <button class="white_button">See Project</button>
+                <button id="submitOne" class="white_button">See Project</button>
             </div>
         </div>
-        <div class="project_multipost">
+        <div id="second-item" class="project_multipost">
             <img class="project_image" src="images/work2.png" alt="first project">
             <img class="project_image_desktop" src="images/project2_desktop.png" alt="second project">
             <div class="desktop_text_multipost">
@@ -109,10 +112,10 @@
                     <li><button class="lang_type">css</button></li>
                     <li><button class="lang_type">javaScript</button></li>
                 </ul>
-            <button class="white_button">See Project</button>
+            <button id="submitTwo" class="white_button">See Project</button>
             </div>
         </div>
-        <div class="project">
+        <div id="third-item" class="project">
             <img class="project_image" src="images/work3.png" alt="third project">
             <img class="project_image_desktop" src="images/project3_desktop.png" alt="third project">
             <div class="desktop_text">
@@ -133,10 +136,10 @@
                 <li><button class="lang_type">css</button></li>
                 <li><button class="lang_type">javaScript</button></li>
             </ul>
-            <button class="white_button">See Project</button>
+            <button id="submitThree" class="white_button">See Project</button>
             </div>
         </div>
-        <div class="project_multipost">
+        <div id="fourth-item" class="project_multipost">
             <img class="project_image" src="images/work4.png" alt="first project">
             <img class="project_image_desktop" src="images/work2.png" alt="project 4">
             <div class="desktop_text_multipost">
@@ -163,7 +166,7 @@
                 <li><button class="lang_type">css</button></li>
                 <li><button class="lang_type">javaScript</button></li>
             </ul>
-            <button class="white_button">See Project</button>
+            <button id="submitFour" class="white_button">See Project</button>
             </div>
         </div>
     </section>
