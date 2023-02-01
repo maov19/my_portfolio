@@ -2,12 +2,12 @@
 const icon = document.getElementById('icon');
 const menu = document.getElementById('menuAll');
 
-icon.onclick = function a() {
+icon.onclick = function openMenu() {
   icon.classList.toggle('is-active');
   menu.classList.toggle('is-active');
 };
 
-document.onclick = function b(clickEvent) {
+document.onclick = function closeMenu(clickEvent) {
   if (clickEvent.target.id !== 'menuAll' && clickEvent.target.id !== 'icon') {
     icon.classList.remove('is-active');
     menu.classList.remove('is-active');
@@ -15,7 +15,7 @@ document.onclick = function b(clickEvent) {
 };
 
 
-//objects to loop over
+//objects
 let portfolios = [
   {
       title: 'Tonic',
@@ -55,7 +55,7 @@ let portfolios = [
 ]
 
 
-// content stylling
+//content styling
 let topicText = {
   color: '#172b4d',
   fontSize: '32px'
@@ -252,6 +252,7 @@ for (let i = 0; i < portfolios.length; i++) {
   buttonWrapper.appendChild(seelive)
   buttonWrapper.appendChild(seesource)
 
+  
   buttons[i].addEventListener('click', () => {
       let overlay = document.getElementById('overlay');
       overlay.style.display === 'block' ? overlay.style.display = 'none' : overlay.style.display = 'block'
