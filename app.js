@@ -14,151 +14,149 @@ document.onclick = function closeMenu(clickEvent) {
   }
 };
 
+// projects popup
 
-//projects popup
-
-//objects
-let portfolios = [
+// objects
+const portfolios = [
   {
-      title: 'Tonic',
-      listItems: ['CANOPY', 'Back End Dev', '2015'],
-      image: './images/work1.png',
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      seelive: 'See live',
-      seesource: 'See Source'
+    title: 'Tonic',
+    listItems: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/work1.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    seelive: 'See live',
+    seesource: 'See Source',
   },
 
   {
-      title: 'Multi-Post Stories',
-      listItems: ['CANOPY', 'Back End Dev', '2015'],
-      image: './images/work2.png',
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      seelive: 'See live',
-      seesource: 'See Source'
+    title: 'Multi-Post Stories',
+    listItems: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/work2.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    seelive: 'See live',
+    seesource: 'See Source',
   },
 
   {
-      title: 'Tonic',
-      listItems: ['CANOPY', 'Back End Dev', '2015'],
-      image: './images/work3.png',
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      seelive: 'See live',
-      seesource: 'See Source'
+    title: 'Tonic',
+    listItems: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/work3.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    seelive: 'See live',
+    seesource: 'See Source',
   },
 
   {
-      title: 'Multi-Post Stories',
-      listItems: ['CANOPY', 'Back End Dev', '2015'],
-      image: './images/work4.png',
-      content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      seelive: 'See live',
-      seesource: 'See Source'
+    title: 'Multi-Post Stories',
+    listItems: ['CANOPY', 'Back End Dev', '2015'],
+    image: './images/work4.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    seelive: 'See live',
+    seesource: 'See Source',
   },
-]
+];
 
-//content styling
-let topicText = {
+// content styling
+const topicText = {
   color: '#172b4d',
-  
-  fontSize: '32px'
-}
 
-  //Stylings for the toxic text and cancel button wrapper
-let toxicWrapStyle = {
+  fontSize: '32px',
+};
+
+// Stylings for the tonic text and cancel button wrapper
+const toxicWrapStyle = {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-}
+};
 
-  //Style of cancel button
-let cancelButtonStyle = {
+// Style of cancel button
+const cancelButtonStyle = {
   border: 'none',
   backgroundColor: 'rgba(0,0,0,0)',
   color: '#172b4d',
   fontSize: '2.25rem',
   position: 'relative',
-  top: '-20px'
-}
+  top: '-20px',
+};
 
-  //The html,css and js wrapper styling
-  let buildStyle = {
-    display: 'flex',
-    flexWrap: 'wrap'
-  }
-  
-    //The html, css and js styling
-  let htmlcssjs = {
-    border: '0.5px solid grey',
-    width: 'fit-content',
-    margin: '-10px 10px 20px 0',
-    color: 'black',
-    padding: '0 12px'
-  };
-
-  let port1Style = {
-    width: '100%',
-    borderRadius: '10px',
-    marginTop: '10px'
-  }
-  
-
-let thirdWrapperStyle = {
+// The html,css and js wrapper styling
+const buildStyle = {
   display: 'flex',
-  marginTop: '10px'
-}
+  flexWrap: 'wrap',
+};
 
-  //Stylings for the third element 
-let thirdStyle = {
+// The html, css and js styling
+const htmlcssjs = {
+  border: '0.5px solid grey',
+  width: 'fit-content',
+  margin: '-10px 10px 20px 0',
+  color: 'black',
+  padding: '0 12px',
+};
+
+const port1Style = {
+  width: '100%',
+  borderRadius: '10px',
+  marginTop: '10px',
+};
+
+const thirdWrapperStyle = {
+  display: 'flex',
+  marginTop: '10px',
+};
+
+// Stylings for the third element
+const thirdStyle = {
   color: '#344563',
   fontWeight: '600',
   fontSize: '16px',
-  marginRight: '10px'
-}
+  marginRight: '10px',
+};
 
-  //The content styling 
-let contentStyle = {
+// The content styling
+const contentStyle = {
   color: '#000',
   fontSize: '12px',
-  display:  'flex',
+  display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
-}
+  justifyContent: 'center',
+};
 
-//The button wrapper style
-let buttonWrapperStyle = {
+// The button wrapper style
+const buttonWrapperStyle = {
   display: 'flex',
   marginTop: '30px',
   marginBottom: '60px',
-  justifyContent: 'space-around'
+  justifyContent: 'space-around',
 };
 
-//The two buttons style
-let twoButtonsStyle = {
+// The two buttons style
+const twoButtonsStyle = {
   justifyContent: 'start',
   border: '2px solid grey',
   padding: '8px 16px',
   color: 'grey',
   userSelect: 'none',
-  fontWeight: '500'
+  fontWeight: '500',
 
-}
+};
 
-let items = [
+const items = [
   document.querySelector('#first-item'),
   document.querySelector('#second-item'),
   document.querySelector('#third-item'),
-  document.querySelector('#fourth-item')
-]
+  document.querySelector('#fourth-item'),
+];
 
-let buttons = [
+const buttons = [
   document.querySelector('#submitOne'),
   document.querySelector('#submitTwo'),
   document.querySelector('#submitThree'),
   document.querySelector('#submitFour'),
 
-]
+];
 
-let containerStyles = {
+const containerStyles = {
   backgroundColor: 'rgba(255,255,255,1)',
   width: '80vw',
   height: '100vh',
@@ -172,102 +170,103 @@ let containerStyles = {
   padding: '1px 20px',
   overflowY: 'scroll',
   zIndex: '4',
-}
+};
 
-for (let i = 0; i < portfolios.length; i++) {
-
-  //The container element for the popup
-  let popupModal = document.createElement('div');
+for (let i = 0; i < portfolios.length; i += 1) {
+  // The container element for the popup
+  const popupModal = document.createElement('div');
   Object.assign(popupModal.style, containerStyles);
   items[i].appendChild(popupModal);
 
-  let topicWrapper = document.createElement('div');
-  Object.assign(topicWrapper.style, toxicWrapStyle)
+  const topicWrapper = document.createElement('div');
+  Object.assign(topicWrapper.style, toxicWrapStyle);
   popupModal.appendChild(topicWrapper);
 
-  let topic = document.createElement('h2');
-  let cancel = document.createElement('button');
+  const topic = document.createElement('h2');
+  const cancel = document.createElement('button');
   cancel.innerHTML = '&times';
   topic.innerHTML = portfolios[i].title;
-  Object.assign(topic.style, topicText)
-  Object.assign(cancel.style, cancelButtonStyle)
+  Object.assign(topic.style, topicText);
+  Object.assign(cancel.style, cancelButtonStyle);
   topicWrapper.appendChild(topic);
   topicWrapper.appendChild(cancel);
 
-    //The html, css and js wrapper
-    let buildWrapper = document.createElement('div');
-    Object.assign(buildWrapper.style, buildStyle);
-    popupModal.appendChild(buildWrapper);
-  
-    //The html, css and js elements
-    let html = document.createElement('div');
-    let css = document.createElement('div');
-    let js = document.createElement('div');
-    html.innerHTML = 'html'
-    css.innerHTML = 'css'
-    js.innerHTML = 'javascript'
-    Object.assign(html.style, htmlcssjs);
-    Object.assign(css.style, htmlcssjs);
-    Object.assign(js.style, htmlcssjs);
-    buildWrapper.appendChild(html);
-    buildWrapper.appendChild(css);
-    buildWrapper.appendChild(js);
+  // The html, css and js wrapper
+  const buildWrapper = document.createElement('div');
+  Object.assign(buildWrapper.style, buildStyle);
+  popupModal.appendChild(buildWrapper);
 
-      //The image element
-    let imageOne = document.createElement('img');
-    imageOne.src = portfolios[i].image;
-    Object.assign(imageOne.style, port1Style)
-    popupModal.appendChild(imageOne)
-  
-    //div for 3 elements
-    let thirdWrapper = document.createElement('div');
-    Object.assign(thirdWrapper.style, thirdWrapperStyle)
-    popupModal.appendChild(thirdWrapper);
+  // The html, css and js elements
+  const html = document.createElement('div');
+  const css = document.createElement('div');
+  const js = document.createElement('div');
+  html.innerHTML = 'html';
+  css.innerHTML = 'css';
+  js.innerHTML = 'javascript';
+  Object.assign(html.style, htmlcssjs);
+  Object.assign(css.style, htmlcssjs);
+  Object.assign(js.style, htmlcssjs);
+  buildWrapper.appendChild(html);
+  buildWrapper.appendChild(css);
+  buildWrapper.appendChild(js);
 
-    //3 elements list
-    let thirdElements = portfolios[i].listItems
-    for (let i = 0; i < thirdElements.length; i++) {
+  // The image element
+  const imageOne = document.createElement('img');
+  imageOne.src = portfolios[i].image;
+  Object.assign(imageOne.style, port1Style);
+  popupModal.appendChild(imageOne);
 
-      let lists = document.createElement('div');
-      lists.innerHTML = thirdElements[i] + ' &#x2022;';
-      Object.assign(lists.style, thirdStyle)
-      thirdWrapper.appendChild(lists)
+  // div for 3 elements
+  const thirdWrapper = document.createElement('div');
+  Object.assign(thirdWrapper.style, thirdWrapperStyle);
+  popupModal.appendChild(thirdWrapper);
+
+  // 3 elements list
+  const thirdElements = portfolios[i].listItems;
+  for (let i = 0; i < thirdElements.length; i += 1) {
+    const lists = document.createElement('div');
+    lists.innerHTML = `${thirdElements[i]} &#x2022;`;
+    Object.assign(lists.style, thirdStyle);
+    thirdWrapper.appendChild(lists);
   }
 
-  //The content element
-  let content = document.createElement('p')
-  content.innerHTML = portfolios[i].content
-  Object.assign(content.style, contentStyle)
+  // The content element
+  const content = document.createElement('p');
+  content.innerHTML = portfolios[i].content;
+  Object.assign(content.style, contentStyle);
   popupModal.appendChild(content);
 
+  // The buttons wrapper
+  const buttonWrapper = document.createElement('div');
+  Object.assign(buttonWrapper.style, buttonWrapperStyle);
+  popupModal.appendChild(buttonWrapper);
 
-  //The buttons wrapper
-  let buttonWrapper = document.createElement('div');
-  Object.assign(buttonWrapper.style, buttonWrapperStyle)
-  popupModal.appendChild(buttonWrapper)
-
-  //The two end buttons
-  let seelive = document.createElement('a');
-  let seesource = document.createElement('a');
+  // The two end buttons
+  const seelive = document.createElement('a');
+  const seesource = document.createElement('a');
   seelive.innerHTML = 'See live';
   seesource.innerHTML = 'See Source';
-  Object.assign(seelive.style, twoButtonsStyle)
-  Object.assign(seesource.style, twoButtonsStyle)
-  buttonWrapper.appendChild(seelive)
-  buttonWrapper.appendChild(seesource)
+  Object.assign(seelive.style, twoButtonsStyle);
+  Object.assign(seesource.style, twoButtonsStyle);
+  buttonWrapper.appendChild(seelive);
+  buttonWrapper.appendChild(seesource);
 
-  //clic to open popup
+  // clic to open popup
   buttons[i].addEventListener('click', () => {
-      let overlay = document.getElementById('overlay');
-      overlay.style.display === 'block' ? overlay.style.display = 'none' : overlay.style.display = 'block';
-      popupModal.style.display = 'block';
-  })
+    const overlay = document.getElementById('overlay');
 
-    // The event listeners for the cancel button
-  cancel.addEventListener('click', function () {
-    overlay.style.display = 'none'
+    if (overlay.style.display === 'block') {
+      overlay.style.display = 'none';
+    } else {
+      overlay.style.display = 'block';
+    }
+    popupModal.style.display = 'block';
+  });
+
+  // The event listeners for the cancel button
+  cancel.addEventListener('click', () => {
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'none';
     popupModal.style.display = 'none';
-  })
+  });
 }
-
-
