@@ -55,10 +55,25 @@ const portfolios = [
   },
 ];
 
+const containerStyles = {
+  backgroundColor: 'rgba(255,255,255,1)',
+  width: '80vw',
+  height: '100vh',
+  position: 'fixed',
+  top: '10px',
+  left: '50%',
+  transform: 'translateX(-50%) translateY(5%)',
+  borderRadius: '16px',
+  alignItems: 'center',
+  display: 'none',
+  padding: '1px 20px',
+  overflowY: 'hide',
+  zIndex: '100',
+};
+
 // content styling
 const topicText = {
   color: '#172b4d',
-
   fontSize: '32px',
 };
 
@@ -87,11 +102,14 @@ const buildStyle = {
 
 // The html, css and js styling
 const htmlcssjs = {
-  border: '0.5px solid grey',
-  width: 'fit-content',
-  margin: '-10px 10px 20px 0',
-  color: 'black',
+  backgroundColor: '#ebebff',
+  border: '2px solid #ebebff',
+  borderRadius: '8px',
+  color: '#6070ff',
+  fontWeight: '500',
+  marginRight: '10px',
   padding: '0 12px',
+  width: 'fit-content',
 };
 
 const port1Style = {
@@ -107,9 +125,10 @@ const thirdWrapperStyle = {
 
 // Stylings for the third element
 const thirdStyle = {
+  backgroundColor: 'rgba(255,255,255,1)',
   color: '#344563',
-  fontWeight: '600',
   fontSize: '16px',
+  fontWeight: '600',
   marginRight: '10px',
 };
 
@@ -124,6 +143,7 @@ const contentStyle = {
 
 // The button wrapper style
 const buttonWrapperStyle = {
+  backgroundColor: 'rgba(255,255,255,1)',
   display: 'flex',
   marginTop: '30px',
   marginBottom: '60px',
@@ -132,13 +152,12 @@ const buttonWrapperStyle = {
 
 // The two buttons style
 const twoButtonsStyle = {
-  justifyContent: 'start',
-  border: '2px solid grey',
-  padding: '8px 16px',
-  color: 'grey',
-  userSelect: 'none',
+  border: '1px solid #6070ff',
+  borderRadius: '8px',
+  color: '#6070ff',
   fontWeight: '500',
-
+  padding: '8px 12px',
+  userSelect: 'none',
 };
 
 const items = [
@@ -155,22 +174,6 @@ const buttons = [
   document.querySelector('#submitFour'),
 
 ];
-
-const containerStyles = {
-  backgroundColor: 'rgba(255,255,255,1)',
-  width: '80vw',
-  height: '100vh',
-  position: 'fixed',
-  top: '10px',
-  left: '50%',
-  transform: 'translateX(-50%) translateY(5%)',
-  borderRadius: '16px',
-  alignItems: 'center',
-  display: 'none',
-  padding: '1px 20px',
-  overflowY: 'scroll',
-  zIndex: '4',
-};
 
 for (let i = 0; i < portfolios.length; i += 1) {
   // The container element for the popup
@@ -191,6 +194,32 @@ for (let i = 0; i < portfolios.length; i += 1) {
   topicWrapper.appendChild(topic);
   topicWrapper.appendChild(cancel);
 
+  // div for 3 elements
+  const thirdWrapper = document.createElement('div');
+  Object.assign(thirdWrapper.style, thirdWrapperStyle);
+  popupModal.appendChild(thirdWrapper);
+
+  // 3 elements list
+  const thirdElements = portfolios[i].listItems;
+  for (let i = 0; i < thirdElements.length; i += 1) {
+    const lists = document.createElement('div');
+    lists.innerHTML = `${thirdElements[i]} &#x2022;`;
+    Object.assign(lists.style, thirdStyle);
+    thirdWrapper.appendChild(lists);
+  }
+
+  // The image element
+  const imageOne = document.createElement('img');
+  imageOne.src = portfolios[i].image;
+  Object.assign(imageOne.style, port1Style);
+  popupModal.appendChild(imageOne);
+
+  // The content element
+  const content = document.createElement('p');
+  content.innerHTML = portfolios[i].content;
+  Object.assign(content.style, contentStyle);
+  popupModal.appendChild(content);
+
   // The html, css and js wrapper
   const buildWrapper = document.createElement('div');
   Object.assign(buildWrapper.style, buildStyle);
@@ -210,32 +239,6 @@ for (let i = 0; i < portfolios.length; i += 1) {
   buildWrapper.appendChild(css);
   buildWrapper.appendChild(js);
 
-  // The image element
-  const imageOne = document.createElement('img');
-  imageOne.src = portfolios[i].image;
-  Object.assign(imageOne.style, port1Style);
-  popupModal.appendChild(imageOne);
-
-  // div for 3 elements
-  const thirdWrapper = document.createElement('div');
-  Object.assign(thirdWrapper.style, thirdWrapperStyle);
-  popupModal.appendChild(thirdWrapper);
-
-  // 3 elements list
-  const thirdElements = portfolios[i].listItems;
-  for (let i = 0; i < thirdElements.length; i += 1) {
-    const lists = document.createElement('div');
-    lists.innerHTML = `${thirdElements[i]} &#x2022;`;
-    Object.assign(lists.style, thirdStyle);
-    thirdWrapper.appendChild(lists);
-  }
-
-  // The content element
-  const content = document.createElement('p');
-  content.innerHTML = portfolios[i].content;
-  Object.assign(content.style, contentStyle);
-  popupModal.appendChild(content);
-
   // The buttons wrapper
   const buttonWrapper = document.createElement('div');
   Object.assign(buttonWrapper.style, buttonWrapperStyle);
@@ -244,12 +247,19 @@ for (let i = 0; i < portfolios.length; i += 1) {
   // The two end buttons
   const seelive = document.createElement('a');
   const seesource = document.createElement('a');
+  const seeLiveImg = document.createElement('img');
+  seeLiveImg.src = './images/seelive.png';
+  const seeSourceImg = document.createElement('img');
+  seeSourceImg.src = './images/seesource.png';
+
   seelive.innerHTML = 'See live';
   seesource.innerHTML = 'See Source';
   Object.assign(seelive.style, twoButtonsStyle);
   Object.assign(seesource.style, twoButtonsStyle);
   buttonWrapper.appendChild(seelive);
   buttonWrapper.appendChild(seesource);
+  seelive.appendChild(seeLiveImg);
+  seesource.appendChild(seeSourceImg);
 
   // clic to open popup
   buttons[i].addEventListener('click', () => {
