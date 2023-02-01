@@ -262,12 +262,12 @@ for (let i = 0; i < portfolios.length; i++) {
       overlay.style.display === 'block' ? overlay.style.display = 'none' : overlay.style.display = 'block';
       popupModal.style.display = 'block';
   })
+
+    // The event listeners for the cancel button
+  cancel.addEventListener('click', function () {
+    overlay.style.display = 'none'
+    popupModal.style.display = 'none';
+  })
 }
 
-  //not working, see where it should be added
-  cancel[i].addEventListener('click', () => {
-    popupModal.style.display === 'block' ? popupModal.style.display = 'none' : popupModal.style.display = 'block';
-    popupModal.style.display === 'none';
-  
-  })
 
