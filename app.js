@@ -2,6 +2,7 @@
 const icon = document.getElementById('icon');
 const menu = document.getElementById('menuAll');
 
+// The event that opens the menu
 icon.onclick = function openMenu() {
   icon.classList.toggle('is-active');
   menu.classList.toggle('is-active');
@@ -289,3 +290,107 @@ for (let i = 0; i < portfolios.length; i += 1) {
     popupModal.style.display = 'none';
   });
 }
+
+// form validation
+
+// The content of the email field has to be in lower case.
+// when user submits
+// If the validation is OK, the form is sent.
+// If the validation is not OK, you show an error message.
+
+// create variables from html elements
+const submitButton = document.getElementById('submit');
+const email = document.getElementById('email');
+const form = document.getElementById('contact');
+
+// error message styling
+const errorMsgStyle = {
+  backgroundColor: 'blue',
+  color: '#fff',
+  opacity: '0',
+  transition: 'all 0.5s',
+  userSelect: 'none',
+  width: 'fit-content',
+  'margin-left': 'auto',
+  'margin-right': 'auto',
+  'justify-content': 'center',
+  alignItems: 'center',
+};
+
+// create error message
+const errorMsg = document.createElement('p');
+errorMsg.textContent = 'hi, im an error message';
+form.appendChild(errorMsg);
+Object.assign(errorMsg.style, errorMsgStyle);
+
+// create validations
+const regEx = /^[a-z0-9_.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/u;
+const checkCaps = /[A-Z]+/u;
+const timeOut = 2000;
+
+// create function
+submitButton.addEventListener('click', (event) => {
+  const validation = regEx.test(email.value); // variable to check mail validation
+
+  // if email is empty
+  if (email.value === '') {
+    setTimeout(() => {
+      errorMsg.style.opacity = '0';
+    },
+    timeOut);
+    errorMsg.style.opacity = '1';
+    errorMsg.style.transition = 'all 0.5s';
+    errorMsg.innerHTML = 'Email field is empty.';
+    event.preventDefault();
+
+  // if email has CAPS
+  } else if (checkCaps.test(email.value)) {
+    setTimeout(() => {
+      errorMsg.style.opacity = '0';
+    },
+    timeOut);
+    errorMsg.style.opacity = '1';
+    errorMsg.style.transition = 'all 0.5s';
+    errorMsg.innerHTML = 'Email field has CAPS.';
+    event.preventDefault();
+
+  // if email has void values
+  } else if (!validation) {
+    setTimeout(() => {
+      errorMsg.style.opacity = '0';
+    },
+    timeOut);
+    errorMsg.style.opacity = '1';
+    errorMsg.style.transition = 'all 0.5s';
+    errorMsg.innerHTML = 'Email field has unvalid characters.';
+    event.preventDefault();
+  }
+});
+
+// preserve data on local storage
+
+// get username and message variables - email is already declared
+const userName = document.querySelector('#name');
+const message = document.querySelector('#message');
+
+// get input data into an object
+document.addEventListener('keyup', () => {
+  const info = {};
+  info.name = userName.value;
+  info.email = email.value;
+  info.message = message.value;
+
+  // convert string into object notation - IMPORTANT
+  const stringD = JSON.stringify(info);
+  localStorage.setItem('info', stringD);
+});
+
+// send data back to input
+const preserveInfo = () => {
+  const setInfo = JSON.parse(localStorage.getItem('data'));
+  userName.value = setInfo.name;
+  email.value = setInfo.email;
+  message.value = setInfo.message;
+};
+
+window.onload = preserveInfo;

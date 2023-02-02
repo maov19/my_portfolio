@@ -200,7 +200,7 @@ a:link {
   justify-content: center;
   padding: 16px;
   gap: 12px;
-  width: 327px;
+  width: auto;
   height: auto;
   background: #fff;
   border: 1px solid #dfe1e6;
