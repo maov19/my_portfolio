@@ -362,11 +362,11 @@ submitButton.addEventListener('click', (event) => {
 //preserve data on local storage
 
 //get username and message variables - email is already declared
-let userName = document.querySelector('.name');
-let message = document.querySelector('.message');
+let userName = document.querySelector('#name');
+let message = document.querySelector('#message');
 
 // get input data into an object
-form.addEventListener('keyup', () => {
+document.addEventListener('keyup', () => {
   let info = {};
   info.name = userName.value;
   info.email = email.value;
