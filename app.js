@@ -374,5 +374,15 @@ form.addEventListener('keyup', () => {
 
   //convert string into object notation - IMPORTANT
   let stringD = JSON.stringify(info);
-  localStorage.setItem('info', stringD)
+  localStorage.setItem('info', stringD);
 }) 
+
+// send data back to input
+let preserveInfo = () => {
+  let setInfo = JSON.parse(localStorage.getItem('data'));
+  userName.value = setInfo.name;
+  email.value = setInfo.email;
+  message.value = setInfo.message;
+}
+
+window.onload = preserveInfo;
