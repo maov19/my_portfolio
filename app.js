@@ -57,17 +57,18 @@ const portfolios = [
 
 const containerStyles = {
   backgroundColor: 'rgba(255,255,255,1)',
-  width: '80vw',
-  height: '100vh',
-  position: 'fixed',
-  top: '10px',
-  left: '50%',
-  transform: 'translateX(-50%) translateY(5%)',
   borderRadius: '16px',
-  alignItems: 'center',
   display: 'none',
+  'flex-direction': 'column',
+  alignItems: 'flex-start',
+  height: '75vh',
+  left: '50%',
+  overflowY: 'scroll',
   padding: '1px 20px',
-  overflowY: 'hide',
+  position: 'fixed',
+  top: '40px',
+  transform: 'translateX(-50%) translateY(5%)',
+  width: '80vw',
   zIndex: '100',
 };
 
@@ -113,9 +114,10 @@ const htmlcssjs = {
 };
 
 const port1Style = {
-  width: '100%',
   borderRadius: '10px',
   marginTop: '10px',
+  width: '100%',
+  'min-width': '0',
 };
 
 const thirdWrapperStyle = {
@@ -125,7 +127,6 @@ const thirdWrapperStyle = {
 
 // Stylings for the third element
 const thirdStyle = {
-  backgroundColor: 'rgba(255,255,255,1)',
   color: '#344563',
   fontSize: '16px',
   fontWeight: '600',
@@ -139,6 +140,8 @@ const contentStyle = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  width: '70vw',
+  'min-width': '0',
 };
 
 // The button wrapper style
@@ -158,6 +161,10 @@ const twoButtonsStyle = {
   fontWeight: '500',
   padding: '8px 12px',
   userSelect: 'none',
+};
+
+const overlayStyle = {
+  backgroundColor: 'grey',
 };
 
 const items = [
@@ -263,7 +270,8 @@ for (let i = 0; i < portfolios.length; i += 1) {
 
   // clic to open popup
   buttons[i].addEventListener('click', () => {
-    const overlay = document.getElementById('overlay');
+    const overlay = document.querySelector('#overlay');
+    Object.assign(overlay.style, overlayStyle);
 
     if (overlay.style.display === 'block') {
       overlay.style.display = 'none';
@@ -271,6 +279,7 @@ for (let i = 0; i < portfolios.length; i += 1) {
       overlay.style.display = 'block';
     }
     popupModal.style.display = 'block';
+    overlay.style.display = 'block';
   });
 
   // The event listeners for the cancel button

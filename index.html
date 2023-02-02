@@ -12,8 +12,6 @@
     <title>Martin's Portfolio</title>
 </head>
 <body>
-    <!-- popups overlay -->
-    <div id="overlay"></div>
 
     <!-- navbar -->
     <header>
@@ -65,6 +63,8 @@
 
     <!-- works -->
     <section id="portfolio" class="works">
+        <!-- popups overlay -->
+        <div id="overlay"></div>
         <div id="first-item" class="project">
             <img class="project_image" src="images/work1.png" alt="first project">
             <img class="project_image_desktop" src="images/project1_desktop.png" alt="project 1">
@@ -215,10 +215,10 @@
             a feature that you need built or a project that needs coding. 
             I'd love to help with it.
         </h2>
-        <input class="name" type="text" maxlength="30" required placeholder="Your name here">
+        <input id="name" class="name" type="text" maxlength="30" required placeholder="Your name here">
         <input class="email" type="email" id="email" size="30" required placeholder="Your mail here">          
-        <textarea class="message" name="message" id="" cols="30" rows="10" maxlength="500" required placeholder="Write your message here"></textarea>
-        <button type="submit" class="get_in_touch">Get in touch</button>
+        <textarea class="message" name="message" id="message" cols="30" rows="10" maxlength="500" required placeholder="Write your message here"></textarea>
+        <button type="submit" id="submit" class="get_in_touch">Get in touch</button>
     </form>  
     <script src="./app.js"></script>
     </form>
