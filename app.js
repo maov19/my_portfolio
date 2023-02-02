@@ -283,50 +283,79 @@ for (let i = 0; i < portfolios.length; i += 1) {
 
 //form validation
 
+  // The content of the email field has to be in lower case.
+  // when user submits
+  // If the validation is OK, the form is sent.
+  // If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
 
-// The content of the email field has to be in lower case.
-// when user submits
-// If the validation is OK, the form is sent.
-// If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
 
-//check if cell has value
-function hasValue(input, message) {
-	if (input.value.trim() === "") {
-		return showError(input, message);
-	}
-	return showSuccess(input);
-}
-// show a message with a type of the input
-function validateEmail(input, requiredMsg, invalidMsg) {
-	// check if the value is not empty
-	if (!hasValue(input, requiredMsg)) {
-		return false;
-	}
-	// validate email format
-	const emailRegex =
-		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+// create variables from html elements
+let submitButton = document.getElementById('submit');
+let email = document.getElementById('email');
+let form = document.getElementById('contact');
 
-	const email = input.value.trim();
-	if (!emailRegex.test(email)) {
-		return showError(input, invalidMsg);
-	}
-	return true;
+// error message styling
+let errorMsgStyle = {
+  'backgroundColor': 'blue',
+  'color': '#fff',
+  'opacity': '0',
+  'transition': 'all 0.5s',
+  'userSelect': 'none',
+  'width': 'fit-content',
+  'margin-left': 'auto',
+  'margin-right': 'auto',
+  'justify-content': 'center',
+  alignItems: 'center'
 }
 
-const form = document.querySelector("#contact");
+// create error message
+let errorMsg = document.createElement('p');
+errorMsg.textContent = 'hi, im an error message';
+form.appendChild(errorMsg);
+Object.assign(errorMsg.style, errorMsgStyle);
 
-const NAME_REQUIRED = "Please enter your name";
-const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter a correct email address format";
 
-form.addEventListener("submit", function (event) {
-	// stop form submission
-	event.preventDefault();
+// create validations
+let regEx = /^[a-z0-9_.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/u;
+let checkCaps = /[A-Z]+/u;
+let timeOut = 2000;
+let validation = regEx.test(email.value); //variable to check mail validation
 
-	// validate the form
-	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-	// if valid, submit the form.
-	if (emailValid) {
-		alert("Demo only. No form was posted.");
-	}
-});
+
+// create function
+submitButton.addEventListener('click', (event) => {
+  // if email is empty
+  if (email.value === '') {
+    setTimeout (function () {
+      errorMsg.style.opacity = '0';
+    }, 
+    timeOut);
+    errorMsg.style.opacity = '1';
+    errorMsg.style.transition = 'all 0.5s';
+    errorMsg.innerHTML = 'Email field is empty.';
+    event.preventDefault ();
+
+  //if email has CAPS
+  } else if (checkCaps.test(email.value)) {
+    setTimeout (function () {
+      errorMsg.style.opacity = '0';
+    }, 
+    timeOut);
+    errorMsg.style.opacity = '1';
+    errorMsg.style.transition = 'all 0.5s';
+    errorMsg.innerHTML = 'Email field has CAPS.';
+    event.preventDefault ();
+  
+  //if email has void values
+  } else if (!validation) {
+    setTimeout (function () {
+      errorMsg.style.opacity = '0';
+    }, 
+    timeOut)
+    errorMsg.style.opacity = '1';
+    errorMsg.style.transition = 'all 0.5s';
+    errorMsg.innerHTML = 'Email field has unvalid characters.';
+    event.preventDefault ();
+  } 
+})
+
