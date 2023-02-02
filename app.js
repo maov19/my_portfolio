@@ -2,6 +2,7 @@
 const icon = document.getElementById('icon');
 const menu = document.getElementById('menuAll');
 
+// The event that opens the menu
 icon.onclick = function openMenu() {
   icon.classList.toggle('is-active');
   menu.classList.toggle('is-active');
