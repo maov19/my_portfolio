@@ -358,31 +358,30 @@ submitButton.addEventListener('click', (event) => {
   }
 });
 
+// preserve data on local storage
 
-//preserve data on local storage
-
-//get username and message variables - email is already declared
-let userName = document.querySelector('#name');
-let message = document.querySelector('#message');
+// get username and message variables - email is already declared
+const userName = document.querySelector('#name');
+const message = document.querySelector('#message');
 
 // get input data into an object
 document.addEventListener('keyup', () => {
-  let info = {};
+  const info = {};
   info.name = userName.value;
   info.email = email.value;
   info.message = message.value;
 
-  //convert string into object notation - IMPORTANT
-  let stringD = JSON.stringify(info);
+  // convert string into object notation - IMPORTANT
+  const stringD = JSON.stringify(info);
   localStorage.setItem('info', stringD);
-}) 
+});
 
 // send data back to input
-let preserveInfo = () => {
-  let setInfo = JSON.parse(localStorage.getItem('data'));
+const preserveInfo = () => {
+  const setInfo = JSON.parse(localStorage.getItem('data'));
   userName.value = setInfo.name;
   email.value = setInfo.email;
   message.value = setInfo.message;
-}
+};
 
 window.onload = preserveInfo;
