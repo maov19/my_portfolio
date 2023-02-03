@@ -187,12 +187,6 @@ for (let i = 0; i < portfolios.length; i += 1) {
   topicWrapper.appendChild(topic);
   topicWrapper.appendChild(cancel);
 
-  const contentLeft = document.createElement('div');
-  contentLeft.classList.add ('contentLeft');
-
-  const contentRight = document.createElement ('div');
-  contentRight.classList.add ('contentRight')
-
   // div for 3 elements
   const thirdWrapper = document.createElement('div');
   Object.assign(thirdWrapper.style, thirdWrapperStyle);
@@ -213,16 +207,24 @@ for (let i = 0; i < portfolios.length; i += 1) {
   Object.assign(imageOne.style, port1Style);
   popupModal.appendChild(imageOne);
 
+  const contentLeft = document.createElement('div');
+  contentLeft.classList.add ('contentLeft');
+  popupModal.appendChild(contentLeft)
+
+  const contentRight = document.createElement ('div');
+  contentRight.classList.add ('contentRight')
+  popupModal.appendChild(contentRight)
+
   // The content element
   const content = document.createElement('p');
   content.innerHTML = portfolios[i].content;
   content.classList.add ('contentStyle');
-  popupModal.appendChild(content);
+  contentLeft.appendChild(content);
 
   // The html, css and js wrapper
   const buildWrapper = document.createElement('div');
   buildWrapper.classList.add ('buildStyle');
-  popupModal.appendChild(buildWrapper);
+  contentRight.appendChild(buildWrapper);
 
   // The html, css and js elements
   const html = document.createElement('div');
@@ -240,8 +242,8 @@ for (let i = 0; i < portfolios.length; i += 1) {
 
   // The buttons wrapper
   const buttonWrapper = document.createElement('div');
-  Object.assign(buttonWrapper.style, buttonWrapperStyle);
-  popupModal.appendChild(buttonWrapper);
+  buttonWrapper.classList.add ('buttonWrapperStyle');
+  contentRight.appendChild(buttonWrapper);
 
   // The two end buttons
   const seelive = document.createElement('a');
