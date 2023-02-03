@@ -96,14 +96,10 @@ const cancelButtonStyle = {
   top: '-20px',
 };
 
-// The html,css and js wrapper styling
-const buildStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-};
-
 // The html, css and js styling
 const htmlcssjs = {
+  display: 'flex',
+  'flex-direction': 'row',
   backgroundColor: '#ebebff',
   border: '2px solid #ebebff',
   borderRadius: '8px',
@@ -132,17 +128,6 @@ const thirdStyle = {
   fontSize: '16px',
   fontWeight: '600',
   marginRight: '10px',
-};
-
-// The content styling
-const contentStyle = {
-  color: '#000',
-  fontSize: '12px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '70vw',
-  'min-width': '0',
 };
 
 // The button wrapper style
@@ -202,6 +187,12 @@ for (let i = 0; i < portfolios.length; i += 1) {
   topicWrapper.appendChild(topic);
   topicWrapper.appendChild(cancel);
 
+  const contentLeft = document.createElement('div');
+  contentLeft.classList.add ('contentLeft');
+
+  const contentRight = document.createElement ('div');
+  contentRight.classList.add ('contentRight')
+
   // div for 3 elements
   const thirdWrapper = document.createElement('div');
   Object.assign(thirdWrapper.style, thirdWrapperStyle);
@@ -225,12 +216,12 @@ for (let i = 0; i < portfolios.length; i += 1) {
   // The content element
   const content = document.createElement('p');
   content.innerHTML = portfolios[i].content;
-  Object.assign(content.style, contentStyle);
+  content.classList.add ('contentStyle');
   popupModal.appendChild(content);
 
   // The html, css and js wrapper
   const buildWrapper = document.createElement('div');
-  Object.assign(buildWrapper.style, buildStyle);
+  buildWrapper.classList.add ('buildStyle');
   popupModal.appendChild(buildWrapper);
 
   // The html, css and js elements

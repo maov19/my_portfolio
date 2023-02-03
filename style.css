@@ -933,4 +933,43 @@ ul {
   .connect {
     margin-left: 0;
   }
+
+  /*1 text */
+  .contentStyle  {
+  color: '#000',
+  fontSize: '12px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '70vw',
+  'min-width': '0',
+};
+
 }
+
+/* 3 - techs */
+.buildStyle {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  width: 100vw;
+};
+
+/* 4 buttons */
+const buttonWrapperStyle = {
+  backgroundColor: 'rgba(255,255,255,1)',
+  display: 'flex',
+  marginTop: '30px',
+  marginBottom: '60px',
+  justifyContent: 'space-around',
+};
+
+/* 5 main left */
+.contentLeft {
+
+}
+/* 2 main right */
+.contentRight {
+
+}
+
