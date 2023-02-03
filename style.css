@@ -934,42 +934,142 @@ ul {
     margin-left: 0;
   }
 
-  /*1 text */
-  .contentStyle  {
-  color: '#000',
-  fontSize: '12px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  width: '70vw',
-  'min-width': '0',
-};
+  /* popups desktop*/
 
-}
+  /* 0 full content desktop */
+  .fullcontentDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-/* 3 - techs */
-.buildStyle {
+  .imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+/* .portStyle {
+  width: 60%;
   display: flex;
-  flex-wrap: wrap; 
-  flex-direction: row;
-  width: 100vw;
+}; */
+
+  /*text */
+  
+  .contentStyle {
+    background-color: blue;
+    color:  #000;
+    font-size:  12px;
+    display:  flex;
+    align-self: center;
+    width: 35vw;
+    height: auto;
+    min-width : 0;
+  }
+
+  /* 3 - techs
+  .buildStyle {
+    display: flex;
+    flex-direction: wrap;
+  };
+   */
+  /* 2 main right */
+  .contentRight {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    align-content: flex-start;
+    justify-content: space-around;
+    margin-left: 4w;
+    width: 20vw;
+    height: 20vh;
+    z-index: 100;
+
+    }
+
+    /* // The two buttons style */
+    .twoButtonsStyle {
+      border: 1px solid #6070ff;
+      border-radius: 8px;
+      color:  #6070ff;
+      padding:  8px 12px;
+   };
+
+  /* 4 buttons */
+  .buttonWrapperStyle {
+    width: 10px;
+
+
+  }
+  
+  /* 5 main left */
+  /* .contentLeft { */
+  
+  }
+
+  
+
+
+/* popups mobile*/
+
+  /* 1 text
+  .contentStyle  {
+    /* color:  #000;
+    font-size: 8px;
+    display:  flex;
+    align-items: center ;
+    justify-content: center;
+    width:  100%;
+    min-width : 0; 
+  }; */
+
+  .imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .port1Style {
+    width: 100%;
 };
 
-/* 4 buttons */
-const buttonWrapperStyle = {
-  backgroundColor: 'rgba(255,255,255,1)',
-  display: 'flex',
-  marginTop: '30px',
-  marginBottom: '60px',
-  justifyContent: 'space-around',
+
+  /* 3 - techs */
+  .buildStyle {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: green;
+  };
+  
+  /* 4 buttons */
+  .buttonWrapperStyle {
+    display: flex;
+    justify-content: space-between;
+    background-color: #172b4d;
+  };
+
+      /* // The two buttons style */
+.twoButtonsStyle {
+  border: 1px solid #6070ff;
+  border-radius:  8px;
+  color:  #6070ff;
+  font-weight:  500;
+  padding:  8px 12px;
+  user-select: none;
+  justify-content: space-between;
 };
+  
+  /* 5 main left */
+  .contentLeft {
+    width: 70vw;
+  }
 
-/* 5 main left */
-.contentLeft {
+  .contentRight {
+    display: flex;
+    flex-direction: column;
 
-}
-/* 2 main right */
-.contentRight {
 
-}
-
+    }
