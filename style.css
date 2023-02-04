@@ -934,25 +934,21 @@ ul {
     margin-left: 0;
   }
 
-  /* popups desktop*/
+  /* popups desktop */
 
   .portStyle {
     align-items: center;
     min-width: 0;
     max-width: 60%;
+  }
 
-  };
-
-  .imageContainer{
+  .imageContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-
   }
-
-
 
   /* 0 full content desktop */
   .fullcontentDesktop {
@@ -960,17 +956,17 @@ ul {
     flex-direction: row;
     justify-content: center;
   }
-  /*text */  
+
+  /* text */
   .contentStyle {
-    color:  #000;
-    font-size:  12px;
-    display:  flex;
+    color: #000;
+    font-size: 12px;
+    display: flex;
     align-self: center;
     width: 30vw;
     height: auto;
-    min-width : 0;
+    min-width: 0;
   }
-
 
   /* 2 main right */
   .contentRight {
@@ -981,15 +977,13 @@ ul {
     width: 25vw;
     height: 20vh;
     margin-left: 2vw;
+  }
 
-    }
-
-/* html, css and js */
+  /* html, css and js */
   .buildStyle {
     display: flex;
     margin-bottom: 20px;
-  };
-  
+  }
 
   /* 4 buttons */
   .buttonWrapperStyle {
@@ -1002,27 +996,21 @@ ul {
     display: flex;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    color:  #6070ff;
-    padding:  8px 12px;
+    color: #6070ff;
+    padding: 8px 12px;
     width: auto;
     height: auto;
-  };
-  
   }
+}
 
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-
-
-/* popups mobile*/
-  .imageContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
-
-  .portStyle {
-    width: 100%;
+.portStyle {
+  width: 100%;
 };
 
 .fullcontentDesktop {
@@ -1036,24 +1024,22 @@ ul {
 }
 
 /* html, css and js */
-  .buttonWrapperStyle, .buildStyle {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 10px;
-  };
+.buttonWrapperStyle,
+.buildStyle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+}
 
-        /* // The two buttons style */
+/* // The two buttons style */
 .twoButtonsStyle {
   border: 1px solid #6070ff;
-  border-radius:  8px;
-  color:  #6070ff;
-  font-weight:  500;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
   padding: 20px;
   user-select: none;
   justify-content: space-between;
-  width:  fit-content;
-};
-  
-
-
+  width: fit-content;
+}
