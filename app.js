@@ -61,13 +61,14 @@ const containerStyles = {
   borderRadius: '16px',
   display: 'none',
   'flex-direction': 'column',
-  height: '80vh',
+  height: '90vh',
   left: '50%',
   overflowY: 'scroll',
-  padding: '80px',
+  'padding-right': '80px',
+  'padding-left': '80px',
   position: 'fixed',
   top: '40px',
-  transform: 'translateX(-50%) translateY(5%)',
+  transform: 'translateX(-50%) translateY(1%)',
   width: '60vw',
   zIndex: '100',
 };
@@ -104,7 +105,7 @@ const htmlcssjs = {
   fontSize: '12px',
   marginRight: '10px',
   height: 'fit-content',
-  width:  'fit-content'
+  width: 'fit-content',
 };
 
 const thirdWrapperStyle = {
@@ -120,15 +121,15 @@ const thirdStyle = {
   marginRight: '10px',
 };
 
-
 // The two buttons style
 const twoButtonsStyle = {
-  'border': '1px solid #6070ff',
-  'borderRadius': '8px',
-  // 'color': '#6070ff',
-  // 'fontWeight': '500',
-  // 'padding': '8px 12px',
-  // 'userSelect': 'none'
+  border: '1px solid #6070ff',
+  borderRadius: '8px',
+  color: '#6070ff',
+  // fontSize: '0.8rem',
+  padding: '8px 12px',
+  userSelect: 'none',
+  'margin-right': '20px',
 };
 
 const overlayStyle = {
@@ -184,40 +185,39 @@ for (let i = 0; i < portfolios.length; i += 1) {
   }
 
   const imageContainer = document.createElement('div');
-  imageContainer.classList.add ('imageContainer')
+  imageContainer.classList.add('imageContainer');
   popupModal.appendChild(imageContainer);
 
   // The image element
   const imageOne = document.createElement('img');
   imageOne.src = portfolios[i].image;
-  imageOne.classList.add ('portStyle');
+  imageOne.classList.add('portStyle');
   imageContainer.appendChild(imageOne);
 
   // full elements desktop
   const fullContentDesktop = document.createElement('div');
-  fullContentDesktop.classList.add('fullcontentDesktop')
+  fullContentDesktop.classList.add('fullcontentDesktop');
   popupModal.appendChild(fullContentDesktop);
 
   // left elements desktop
   const contentLeft = document.createElement('div');
-  contentLeft.classList.add ('contentLeft');
-  fullContentDesktop.appendChild(contentLeft)
+  contentLeft.classList.add('contentLeft');
+  fullContentDesktop.appendChild(contentLeft);
 
-  // right elements desktop 
-  const contentRight = document.createElement ('div');
-  contentRight.classList.add ('contentRight')
-  fullContentDesktop.appendChild(contentRight)
-
+  // right elements desktop
+  const contentRight = document.createElement('div');
+  contentRight.classList.add('contentRight');
+  fullContentDesktop.appendChild(contentRight);
 
   // The content element
   const content = document.createElement('p');
   content.innerHTML = portfolios[i].content;
-  content.classList.add ('contentStyle');
+  content.classList.add('contentStyle');
   contentLeft.appendChild(content);
 
   // The html, css and js wrapper
   const buildWrapper = document.createElement('div');
-  buildWrapper.classList.add ('buildStyle');
+  buildWrapper.classList.add('buildStyle');
   contentRight.appendChild(buildWrapper);
 
   // The html, css and js elements

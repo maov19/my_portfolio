@@ -936,94 +936,84 @@ ul {
 
   /* popups desktop*/
 
+  .portStyle {
+    align-items: center;
+    min-width: 0;
+    max-width: 60%;
+
+  };
+
+  .imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+
+
+
   /* 0 full content desktop */
   .fullcontentDesktop {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-
-  .imageContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-
-/* .portStyle {
-  width: 60%;
-  display: flex;
-}; */
-
-  /*text */
-  
+  /*text */  
   .contentStyle {
-    background-color: blue;
     color:  #000;
     font-size:  12px;
     display:  flex;
     align-self: center;
-    width: 35vw;
+    width: 30vw;
     height: auto;
     min-width : 0;
   }
 
-  /* 3 - techs
-  .buildStyle {
-    display: flex;
-    flex-direction: wrap;
-  };
-   */
+
   /* 2 main right */
   .contentRight {
     display: flex;
     flex-direction: column;
-    background-color: red;
     align-content: flex-start;
     justify-content: space-around;
-    margin-left: 4w;
-    width: 20vw;
+    width: 25vw;
     height: 20vh;
-    z-index: 100;
+    margin-left: 2vw;
 
     }
 
-    /* // The two buttons style */
-    .twoButtonsStyle {
-      border: 1px solid #6070ff;
-      border-radius: 8px;
-      color:  #6070ff;
-      padding:  8px 12px;
-   };
+/* html, css and js */
+  .buildStyle {
+    display: flex;
+    margin-bottom: 20px;
+  };
+  
 
   /* 4 buttons */
   .buttonWrapperStyle {
     width: 10px;
-
-
-  }
-  
-  /* 5 main left */
-  /* .contentLeft { */
-  
+    display: flex;
   }
 
+  /* // The two buttons style */
+  .twoButtonsStyle {
+    display: flex;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color:  #6070ff;
+    padding:  8px 12px;
+    width: auto;
+    height: auto;
+  };
   
+  }
+
+
 
 
 /* popups mobile*/
-
-  /* 1 text
-  .contentStyle  {
-    /* color:  #000;
-    font-size: 8px;
-    display:  flex;
-    align-items: center ;
-    justify-content: center;
-    width:  100%;
-    min-width : 0; 
-  }; */
-
   .imageContainer{
     display: flex;
     flex-direction: row;
@@ -1031,45 +1021,39 @@ ul {
 
   }
 
-  .port1Style {
+  .portStyle {
     width: 100%;
 };
 
+.fullcontentDesktop {
+  display: flex;
+  flex-direction: row;
+}
 
-  /* 3 - techs */
-  .buildStyle {
+.contentRight {
+  display: flex;
+  flex-direction: column;
+}
+
+/* html, css and js */
+  .buttonWrapperStyle, .buildStyle {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: green;
-  };
-  
-  /* 4 buttons */
-  .buttonWrapperStyle {
-    display: flex;
-    justify-content: space-between;
-    background-color: #172b4d;
+    margin-bottom: 10px;
   };
 
-      /* // The two buttons style */
+        /* // The two buttons style */
 .twoButtonsStyle {
   border: 1px solid #6070ff;
   border-radius:  8px;
   color:  #6070ff;
   font-weight:  500;
-  padding:  8px 12px;
+  padding: 20px;
   user-select: none;
   justify-content: space-between;
+  width:  fit-content;
 };
   
-  /* 5 main left */
-  .contentLeft {
-    width: 70vw;
-  }
-
-  .contentRight {
-    display: flex;
-    flex-direction: column;
 
 
-    }
