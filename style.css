@@ -933,4 +933,113 @@ ul {
   .connect {
     margin-left: 0;
   }
+
+  /* popups desktop */
+
+  .portStyle {
+    align-items: center;
+    min-width: 0;
+    max-width: 60%;
+  }
+
+  .imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* 0 full content desktop */
+  .fullcontentDesktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* text */
+  .contentStyle {
+    color: #000;
+    font-size: 12px;
+    display: flex;
+    align-self: center;
+    width: 30vw;
+    height: auto;
+    min-width: 0;
+  }
+
+  /* 2 main right */
+  .contentRight {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    width: 25vw;
+    height: 20vh;
+    margin-left: 2vw;
+  }
+
+  /* html, css and js */
+  .buildStyle {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  /* 4 buttons */
+  .buttonWrapperStyle {
+    width: 10px;
+    display: flex;
+  }
+
+  /* // The two buttons style */
+  .twoButtonsStyle {
+    display: flex;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    color: #6070ff;
+    padding: 8px 12px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.portStyle {
+  width: 100%;
+}
+
+.fullcontentDesktop {
+  display: flex;
+  flex-direction: row;
+}
+
+.contentRight {
+  display: flex;
+  flex-direction: column;
+}
+
+/* html, css and js */
+.buttonWrapperStyle,
+.buildStyle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* // The two buttons style */
+.twoButtonsStyle {
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  padding: 20px;
+  user-select: none;
+  justify-content: space-between;
+  width: fit-content;
 }

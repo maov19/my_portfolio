@@ -22,8 +22,8 @@ const portfolios = [
   {
     title: 'Tonic',
     listItems: ['CANOPY', 'Back End Dev', '2015'],
-    image: './images/work1.png',
-    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './images/project1_desktop.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     seelive: 'See live',
     seesource: 'See Source',
   },
@@ -31,8 +31,8 @@ const portfolios = [
   {
     title: 'Multi-Post Stories',
     listItems: ['CANOPY', 'Back End Dev', '2015'],
-    image: './images/work2.png',
-    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './images/project2_desktop.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     seelive: 'See live',
     seesource: 'See Source',
   },
@@ -40,8 +40,8 @@ const portfolios = [
   {
     title: 'Tonic',
     listItems: ['CANOPY', 'Back End Dev', '2015'],
-    image: './images/work3.png',
-    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './images/project3_desktop.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     seelive: 'See live',
     seesource: 'See Source',
   },
@@ -49,8 +49,8 @@ const portfolios = [
   {
     title: 'Multi-Post Stories',
     listItems: ['CANOPY', 'Back End Dev', '2015'],
-    image: './images/work4.png',
-    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    image: './images/project4_desktop.png',
+    content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     seelive: 'See live',
     seesource: 'See Source',
   },
@@ -58,17 +58,18 @@ const portfolios = [
 
 const containerStyles = {
   backgroundColor: 'rgba(255,255,255,1)',
-  width: '80vw',
-  height: '100vh',
-  position: 'fixed',
-  top: '10px',
-  left: '50%',
-  transform: 'translateX(-50%) translateY(5%)',
   borderRadius: '16px',
-  alignItems: 'center',
   display: 'none',
-  padding: '1px 20px',
-  overflowY: 'hide',
+  'flex-direction': 'column',
+  height: '90vh',
+  left: '50%',
+  overflowY: 'scroll',
+  'padding-right': '80px',
+  'padding-left': '80px',
+  position: 'fixed',
+  top: '40px',
+  transform: 'translateX(-50%) translateY(1%)',
+  width: '60vw',
   zIndex: '100',
 };
 
@@ -95,28 +96,16 @@ const cancelButtonStyle = {
   top: '-20px',
 };
 
-// The html,css and js wrapper styling
-const buildStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-};
-
 // The html, css and js styling
 const htmlcssjs = {
   backgroundColor: '#ebebff',
   border: '2px solid #ebebff',
   borderRadius: '8px',
   color: '#6070ff',
-  fontWeight: '500',
+  fontSize: '12px',
   marginRight: '10px',
-  padding: '0 12px',
+  height: 'fit-content',
   width: 'fit-content',
-};
-
-const port1Style = {
-  width: '100%',
-  borderRadius: '10px',
-  marginTop: '10px',
 };
 
 const thirdWrapperStyle = {
@@ -126,29 +115,10 @@ const thirdWrapperStyle = {
 
 // Stylings for the third element
 const thirdStyle = {
-  backgroundColor: 'rgba(255,255,255,1)',
   color: '#344563',
   fontSize: '16px',
   fontWeight: '600',
   marginRight: '10px',
-};
-
-// The content styling
-const contentStyle = {
-  color: '#000',
-  fontSize: '12px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-};
-
-// The button wrapper style
-const buttonWrapperStyle = {
-  backgroundColor: 'rgba(255,255,255,1)',
-  display: 'flex',
-  marginTop: '30px',
-  marginBottom: '60px',
-  justifyContent: 'space-around',
 };
 
 // The two buttons style
@@ -156,9 +126,14 @@ const twoButtonsStyle = {
   border: '1px solid #6070ff',
   borderRadius: '8px',
   color: '#6070ff',
-  fontWeight: '500',
+  // fontSize: '0.8rem',
   padding: '8px 12px',
   userSelect: 'none',
+  'margin-right': '20px',
+};
+
+const overlayStyle = {
+  backgroundColor: 'grey',
 };
 
 const items = [
@@ -209,22 +184,41 @@ for (let i = 0; i < portfolios.length; i += 1) {
     thirdWrapper.appendChild(lists);
   }
 
+  const imageContainer = document.createElement('div');
+  imageContainer.classList.add('imageContainer');
+  popupModal.appendChild(imageContainer);
+
   // The image element
   const imageOne = document.createElement('img');
   imageOne.src = portfolios[i].image;
-  Object.assign(imageOne.style, port1Style);
-  popupModal.appendChild(imageOne);
+  imageOne.classList.add('portStyle');
+  imageContainer.appendChild(imageOne);
+
+  // full elements desktop
+  const fullContentDesktop = document.createElement('div');
+  fullContentDesktop.classList.add('fullcontentDesktop');
+  popupModal.appendChild(fullContentDesktop);
+
+  // left elements desktop
+  const contentLeft = document.createElement('div');
+  contentLeft.classList.add('contentLeft');
+  fullContentDesktop.appendChild(contentLeft);
+
+  // right elements desktop
+  const contentRight = document.createElement('div');
+  contentRight.classList.add('contentRight');
+  fullContentDesktop.appendChild(contentRight);
 
   // The content element
   const content = document.createElement('p');
   content.innerHTML = portfolios[i].content;
-  Object.assign(content.style, contentStyle);
-  popupModal.appendChild(content);
+  content.classList.add('contentStyle');
+  contentLeft.appendChild(content);
 
   // The html, css and js wrapper
   const buildWrapper = document.createElement('div');
-  Object.assign(buildWrapper.style, buildStyle);
-  popupModal.appendChild(buildWrapper);
+  buildWrapper.classList.add('buildStyle');
+  contentRight.appendChild(buildWrapper);
 
   // The html, css and js elements
   const html = document.createElement('div');
@@ -242,8 +236,8 @@ for (let i = 0; i < portfolios.length; i += 1) {
 
   // The buttons wrapper
   const buttonWrapper = document.createElement('div');
-  Object.assign(buttonWrapper.style, buttonWrapperStyle);
-  popupModal.appendChild(buttonWrapper);
+  buttonWrapper.classList.add('buttonWrapperStyle');
+  contentRight.appendChild(buttonWrapper);
 
   // The two end buttons
   const seelive = document.createElement('a');
@@ -264,14 +258,16 @@ for (let i = 0; i < portfolios.length; i += 1) {
 
   // clic to open popup
   buttons[i].addEventListener('click', () => {
-    const overlay = document.getElementById('overlay');
+    const overlay = document.querySelector('#overlay');
+    Object.assign(overlay.style, overlayStyle);
 
     if (overlay.style.display === 'block') {
       overlay.style.display = 'none';
     } else {
-      overlay.style.display = 'block';
+      overlay.style.display = 'flex';
     }
-    popupModal.style.display = 'block';
+    popupModal.style.display = 'flex';
+    overlay.style.display = 'flex';
   });
 
   // The event listeners for the cancel button
